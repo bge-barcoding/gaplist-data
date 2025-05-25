@@ -1,0 +1,8523 @@
+{
+  "mode": "hybrid",
+  "statistics": {
+    "gbif_queries_made": 5252,
+    "gbif_queries_saved": 154218,
+    "majority_rule_applied": 409,
+    "gbif_changes_applied": 5252,
+    "high_confidence_conflicts": 225,
+    "low_confidence_conflicts": 565
+  },
+  "conflicts_analyzed": 691,
+  "changes_logged": 5661,
+  "smart_gbif_enabled": true,
+  "gbif_stats": {
+    "api_calls": 0,
+    "cache_hits": 5252,
+    "successful_matches": 0,
+    "failed_matches": 0,
+    "rate_limited": 0
+  },
+  "conflict_breakdown": {
+    "gilarovella": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Eriophyidae",
+        "confidence": 0.5,
+        "variants": {
+          "Eriophyidae": 1,
+          "Ctenacaridae": 1
+        }
+      }
+    },
+    "phytoptus": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Phytoptidae",
+        "confidence": 0.9444444444444444,
+        "variants": {
+          "Eriophyidae": 1,
+          "Phytoptidae": 17
+        }
+      }
+    },
+    "omoglymmius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Carabidae",
+        "confidence": 0.5,
+        "variants": {
+          "Carabidae": 1,
+          "Rhysodidae": 1
+        }
+      }
+    },
+    "pelophila": {
+      "phylum": {
+        "total_species": 2,
+        "majority_value": "Arthropoda",
+        "confidence": 0.5,
+        "variants": {
+          "Arthropoda": 1,
+          "Xenacoelomorpha": 1
+        }
+      },
+      "class": {
+        "total_species": 2,
+        "majority_value": "Insecta",
+        "confidence": 0.5,
+        "variants": {
+          "Insecta": 1,
+          "Acoela": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Carabidae",
+        "confidence": 0.5,
+        "variants": {
+          "Carabidae": 1,
+          "Actinoposthiidae": 1
+        }
+      }
+    },
+    "eurithia": {
+      "class": {
+        "total_species": 15,
+        "majority_value": "Insecta",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Arachnida": 1,
+          "Insecta": 14
+        }
+      },
+      "order": {
+        "total_species": 15,
+        "majority_value": "Diptera",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Araneae": 1,
+          "Diptera": 14
+        }
+      },
+      "family": {
+        "total_species": 15,
+        "majority_value": "Tachinidae",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Linyphiidae": 1,
+          "Tachinidae": 14
+        }
+      }
+    },
+    "cephennium": {
+      "family": {
+        "total_species": 97,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.9587628865979382,
+        "variants": {
+          "Staphylinidae": 4,
+          "Scydmaenidae": 93
+        }
+      }
+    },
+    "euconnus": {
+      "family": {
+        "total_species": 127,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.8976377952755905,
+        "variants": {
+          "Staphylinidae": 13,
+          "Scydmaenidae": 114
+        }
+      }
+    },
+    "eutheia": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Staphylinidae": 1,
+          "Scydmaenidae": 12
+        }
+      }
+    },
+    "microscydmus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Staphylinidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Staphylinidae": 2,
+          "Scydmaenidae": 1
+        }
+      }
+    },
+    "scydmaenus": {
+      "family": {
+        "total_species": 19,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.7894736842105263,
+        "variants": {
+          "Staphylinidae": 4,
+          "Scydmaenidae": 15
+        }
+      }
+    },
+    "scydmoraphes": {
+      "family": {
+        "total_species": 73,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.958904109589041,
+        "variants": {
+          "Staphylinidae": 3,
+          "Scydmaenidae": 70
+        }
+      }
+    },
+    "stenichnus": {
+      "family": {
+        "total_species": 65,
+        "majority_value": "Scydmaenidae",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Staphylinidae": 5,
+          "Scydmaenidae": 60
+        }
+      }
+    },
+    "sertularella": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Sertularellidae",
+        "confidence": 0.6428571428571429,
+        "variants": {
+          "Sertulariidae": 5,
+          "Sertularellidae": 9
+        }
+      }
+    },
+    "symplectoscyphus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Symplectoscyphidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Sertulariidae": 1,
+          "Symplectoscyphidae": 2
+        }
+      }
+    },
+    "tarsotomus": {
+      "order": {
+        "total_species": 2,
+        "majority_value": "Trombidiformes",
+        "confidence": 0.5,
+        "variants": {
+          "Trombidiformes": 1,
+          "Prostigmata": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Erythraeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Erythraeidae": 1,
+          "Erythracaridae": 1
+        }
+      }
+    },
+    "pardoxia": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Noctuidae",
+        "confidence": 0.5,
+        "variants": {
+          "Noctuidae": 1,
+          "Nolidae": 1
+        }
+      }
+    },
+    "hypoglyptus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Erirhinidae",
+        "confidence": 0.8,
+        "variants": {
+          "Erirhinidae": 4,
+          "Curculionidae": 1
+        }
+      }
+    },
+    "notaris": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Curculionidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Erirhinidae": 1,
+          "Curculionidae": 5
+        }
+      }
+    },
+    "procas": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Erirhinidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Erirhinidae": 8,
+          "Curculionidae": 1
+        }
+      }
+    },
+    "tournotaris": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Curculionidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Erirhinidae": 1,
+          "Curculionidae": 2
+        }
+      }
+    },
+    "giraudia": {
+      "order": {
+        "total_species": 3,
+        "majority_value": "Hymenoptera",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hymenoptera": 2,
+          "Hemiptera": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Ichneumonidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ichneumonidae": 2,
+          "Pseudococcidae": 1
+        }
+      }
+    },
+    "abyssidrilus": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 1
+        }
+      }
+    },
+    "aktedrilus": {
+      "class": {
+        "total_species": 11,
+        "majority_value": "Clitellata",
+        "confidence": 0.8181818181818182,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 9
+        }
+      },
+      "family": {
+        "total_species": 11,
+        "majority_value": "Naididae",
+        "confidence": 0.8181818181818182,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 9
+        }
+      }
+    },
+    "aulodrilus": {
+      "class": {
+        "total_species": 5,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6,
+        "variants": {
+          "Oligochaeta": 3,
+          "Clitellata": 2
+        }
+      },
+      "family": {
+        "total_species": 5,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6,
+        "variants": {
+          "Tubificidae": 3,
+          "Naididae": 2
+        }
+      }
+    },
+    "epirodrilus": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 1
+        }
+      }
+    },
+    "gianius": {
+      "class": {
+        "total_species": 8,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.5,
+        "variants": {
+          "Oligochaeta": 4,
+          "Clitellata": 4
+        }
+      },
+      "family": {
+        "total_species": 8,
+        "majority_value": "Tubificidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tubificidae": 4,
+          "Naididae": 4
+        }
+      }
+    },
+    "ilyodrilus": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.5,
+        "variants": {
+          "Oligochaeta": 1,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Tubificidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tubificidae": 1,
+          "Randiellidae": 1
+        }
+      }
+    },
+    "limnodrilus": {
+      "class": {
+        "total_species": 8,
+        "majority_value": "Clitellata",
+        "confidence": 0.75,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 6
+        }
+      },
+      "family": {
+        "total_species": 8,
+        "majority_value": "Naididae",
+        "confidence": 0.75,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 6
+        }
+      }
+    },
+    "monopylephorus": {
+      "class": {
+        "total_species": 4,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.5,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 2
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Tubificidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 2
+        }
+      }
+    },
+    "potamothrix": {
+      "class": {
+        "total_species": 16,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.5625,
+        "variants": {
+          "Oligochaeta": 9,
+          "Clitellata": 7
+        }
+      },
+      "family": {
+        "total_species": 16,
+        "majority_value": "Tubificidae",
+        "confidence": 0.5625,
+        "variants": {
+          "Tubificidae": 9,
+          "Naididae": 7
+        }
+      }
+    },
+    "psammoryctides": {
+      "class": {
+        "total_species": 9,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Oligochaeta": 6,
+          "Clitellata": 3
+        }
+      },
+      "family": {
+        "total_species": 9,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Tubificidae": 6,
+          "Naididae": 3
+        }
+      }
+    },
+    "quistadrilus": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.5,
+        "variants": {
+          "Oligochaeta": 1,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Tubificidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tubificidae": 1,
+          "Naididae": 1
+        }
+      }
+    },
+    "rhyacodrilus": {
+      "class": {
+        "total_species": 17,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.8235294117647058,
+        "variants": {
+          "Oligochaeta": 14,
+          "Clitellata": 3
+        }
+      },
+      "family": {
+        "total_species": 17,
+        "majority_value": "Tubificidae",
+        "confidence": 0.8235294117647058,
+        "variants": {
+          "Tubificidae": 14,
+          "Naididae": 3
+        }
+      }
+    },
+    "spiridion": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 1
+        }
+      }
+    },
+    "spirosperma": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Oligochaeta",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Oligochaeta": 2,
+          "Clitellata": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Tubificidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Tubificidae": 2,
+          "Naididae": 1
+        }
+      }
+    },
+    "tubifex": {
+      "class": {
+        "total_species": 10,
+        "majority_value": "Clitellata",
+        "confidence": 0.6,
+        "variants": {
+          "Oligochaeta": 4,
+          "Clitellata": 6
+        }
+      },
+      "family": {
+        "total_species": 10,
+        "majority_value": "Naididae",
+        "confidence": 0.6,
+        "variants": {
+          "Tubificidae": 4,
+          "Naididae": 6
+        }
+      }
+    },
+    "tubificoides": {
+      "class": {
+        "total_species": 20,
+        "majority_value": "Clitellata",
+        "confidence": 0.95,
+        "variants": {
+          "Oligochaeta": 1,
+          "Clitellata": 19
+        }
+      },
+      "family": {
+        "total_species": 20,
+        "majority_value": "Naididae",
+        "confidence": 0.95,
+        "variants": {
+          "Tubificidae": 1,
+          "Naididae": 19
+        }
+      }
+    },
+    "pseudothyone": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Cucumariidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Cucumariidae": 2,
+          "Sclerodactylidae": 1
+        }
+      }
+    },
+    "porcellium": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Trachelipodidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Porcellionidae": 2,
+          "Trachelipodidae": 12
+        }
+      }
+    },
+    "protracheoniscus": {
+      "family": {
+        "total_species": 23,
+        "majority_value": "Trachelipodidae",
+        "confidence": 0.8695652173913043,
+        "variants": {
+          "Porcellionidae": 3,
+          "Trachelipodidae": 20
+        }
+      }
+    },
+    "trachelipus": {
+      "family": {
+        "total_species": 29,
+        "majority_value": "Trachelipodidae",
+        "confidence": 0.9310344827586207,
+        "variants": {
+          "Porcellionidae": 2,
+          "Trachelipodidae": 27
+        }
+      }
+    },
+    "aphalara": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Psyllidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Psyllidae": 10,
+          "Aphalaridae": 5
+        }
+      }
+    },
+    "craspedolepta": {
+      "family": {
+        "total_species": 35,
+        "majority_value": "Psyllidae",
+        "confidence": 0.9142857142857143,
+        "variants": {
+          "Psyllidae": 32,
+          "Aphalaridae": 3
+        }
+      }
+    },
+    "euphyllura": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Psyllidae",
+        "confidence": 0.75,
+        "variants": {
+          "Psyllidae": 3,
+          "Liviidae": 1
+        }
+      }
+    },
+    "livia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Psyllidae",
+        "confidence": 0.5,
+        "variants": {
+          "Psyllidae": 2,
+          "Liviidae": 2
+        }
+      }
+    },
+    "psyllopsis": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Psyllidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Psyllidae": 4,
+          "Liviidae": 3
+        }
+      }
+    },
+    "rhinocola": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Psyllidae",
+        "confidence": 0.5,
+        "variants": {
+          "Psyllidae": 1,
+          "Aphalaridae": 1
+        }
+      }
+    },
+    "strophingia": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Psyllidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Psyllidae": 6,
+          "Liviidae": 1
+        }
+      }
+    },
+    "brachycerus": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Brachyceridae",
+        "confidence": 0.9444444444444444,
+        "variants": {
+          "Curculionidae": 1,
+          "Brachyceridae": 17
+        }
+      }
+    },
+    "ferreria": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Curculionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Curculionidae": 1,
+          "Raymondionymidae": 1
+        }
+      }
+    },
+    "oryzaephilus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Silvanidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Curculionidae": 1,
+          "Silvanidae": 2
+        }
+      }
+    },
+    "sitophilus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Curculionidae",
+        "confidence": 0.75,
+        "variants": {
+          "Curculionidae": 3,
+          "Dryophthoridae": 1
+        }
+      }
+    },
+    "sphenophorus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Curculionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Curculionidae": 2,
+          "Dryophthoridae": 2
+        }
+      }
+    },
+    "isidella": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Keratoisididae",
+        "confidence": 0.5,
+        "variants": {
+          "Keratoisididae": 1,
+          "Isididae": 1
+        }
+      }
+    },
+    "ismarus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ismaridae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Diapriidae": 4,
+          "Ismaridae": 5
+        }
+      }
+    },
+    "dericorys": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Acrididae",
+        "confidence": 0.75,
+        "variants": {
+          "Acrididae": 3,
+          "Dericorythidae": 1
+        }
+      }
+    },
+    "pseudocephalotrema": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lecithodendriidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lecithodendriidae": 1,
+          "Microphallidae": 1
+        }
+      }
+    },
+    "raspailia": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Raspailiidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Raspailiidae": 5,
+          "Axinellidae": 1
+        }
+      }
+    },
+    "acanthobodilus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "acrossus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Aphodiidae": 6,
+          "Scarabaeidae": 3
+        }
+      }
+    },
+    "agoliinus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.625,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 5
+        }
+      }
+    },
+    "agolius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "agrilinus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 4
+        }
+      }
+    },
+    "alocoderus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "amidorus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "ammoecius": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Aphodiidae": 8,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "aphodius": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 6
+        }
+      }
+    },
+    "biralus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "bodilus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Aphodiidae": 8,
+          "Scarabaeidae": 2
+        }
+      }
+    },
+    "calamosternus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.6,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 3
+        }
+      }
+    },
+    "chilothorax": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.7647058823529411,
+        "variants": {
+          "Aphodiidae": 13,
+          "Scarabaeidae": 4
+        }
+      }
+    },
+    "esymus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "eudolus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "euheptaulacus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 4
+        }
+      }
+    },
+    "euorodalus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 2
+        }
+      }
+    },
+    "heptaulacus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Aphodiidae": 4,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "liothorax": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 3
+        }
+      }
+    },
+    "loraphodius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "melinopterus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Aphodiidae": 7,
+          "Scarabaeidae": 5
+        }
+      }
+    },
+    "neagolius": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.9,
+        "variants": {
+          "Aphodiidae": 9,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "nimbus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Aphodiidae": 8,
+          "Scarabaeidae": 2
+        }
+      }
+    },
+    "oromus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 1,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "parammoecius": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.6,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 2
+        }
+      }
+    },
+    "phalacronothus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Aphodiidae": 4,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "plagiogonus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Aphodiidae": 3,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "planolinus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Aphodiidae": 2,
+          "Scarabaeidae": 2
+        }
+      }
+    },
+    "pleurophorus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.875,
+        "variants": {
+          "Aphodiidae": 7,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "psammodius": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Aphodiidae": 5,
+          "Scarabaeidae": 4
+        }
+      }
+    },
+    "rhyssemus": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Aphodiidae",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Aphodiidae": 14,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "amphimallon": {
+      "family": {
+        "total_species": 45,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Scarabaeidae": 10,
+          "Melolonthidae": 35
+        }
+      }
+    },
+    "anisoplia": {
+      "family": {
+        "total_species": 35,
+        "majority_value": "Rutelidae",
+        "confidence": 0.8,
+        "variants": {
+          "Scarabaeidae": 7,
+          "Rutelidae": 28
+        }
+      }
+    },
+    "anomala": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Rutelidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Rutelidae": 8
+        }
+      }
+    },
+    "anoxia": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.8,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Melolonthidae": 12
+        }
+      }
+    },
+    "calicnemis": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Dynastidae": 1
+        }
+      }
+    },
+    "cetonia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Cetoniidae": 1
+        }
+      }
+    },
+    "geotrogus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Melolonthidae": 3
+        }
+      }
+    },
+    "gnorimus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Cetoniidae": 1
+        }
+      }
+    },
+    "holochelus": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Scarabaeidae": 2,
+          "Melolonthidae": 12
+        }
+      }
+    },
+    "hoplia": {
+      "family": {
+        "total_species": 39,
+        "majority_value": "Rutelidae",
+        "confidence": 0.8461538461538461,
+        "variants": {
+          "Scarabaeidae": 6,
+          "Rutelidae": 33
+        }
+      }
+    },
+    "maladera": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Melolonthidae": 5
+        }
+      }
+    },
+    "melolontha": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.6,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Melolonthidae": 2
+        }
+      }
+    },
+    "mimela": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Rutelidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Rutelidae": 2
+        }
+      }
+    },
+    "omaloplia": {
+      "family": {
+        "total_species": 21,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.9047619047619048,
+        "variants": {
+          "Scarabaeidae": 2,
+          "Melolonthidae": 19
+        }
+      }
+    },
+    "oryctes": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Dynastidae": 1
+        }
+      }
+    },
+    "osmoderma": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Scarabaeidae": 5,
+          "Cetoniidae": 1
+        }
+      }
+    },
+    "oxythyrea": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Cetoniidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Cetoniidae": 5
+        }
+      }
+    },
+    "pachypus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Pachypodidae": 1
+        }
+      }
+    },
+    "paratriodonta": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Melolonthidae": 2
+        }
+      }
+    },
+    "pentodon": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Scarabaeidae": 3,
+          "Dynastidae": 3
+        }
+      }
+    },
+    "polyphylla": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Scarabaeidae": 1,
+          "Melolonthidae": 5
+        }
+      }
+    },
+    "protaetia": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Cetoniidae",
+        "confidence": 0.5384615384615384,
+        "variants": {
+          "Scarabaeidae": 12,
+          "Cetoniidae": 14
+        }
+      }
+    },
+    "rhizotrogus": {
+      "family": {
+        "total_species": 31,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.7741935483870968,
+        "variants": {
+          "Scarabaeidae": 7,
+          "Melolonthidae": 24
+        }
+      }
+    },
+    "trichius": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Scarabaeidae",
+        "confidence": 0.8,
+        "variants": {
+          "Scarabaeidae": 4,
+          "Cetoniidae": 1
+        }
+      }
+    },
+    "pales": {
+      "order": {
+        "total_species": 7,
+        "majority_value": "Diptera",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Coleoptera": 1,
+          "Diptera": 6
+        }
+      },
+      "family": {
+        "total_species": 7,
+        "majority_value": "Tachinidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Chrysomelidae": 1,
+          "Tachinidae": 6
+        }
+      }
+    },
+    "zeugophora": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Megalopodidae",
+        "confidence": 0.8,
+        "variants": {
+          "Chrysomelidae": 1,
+          "Megalopodidae": 4
+        }
+      }
+    },
+    "setaria": {
+      "class": {
+        "total_species": 6,
+        "majority_value": "Chromadorea",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Chromadorea": 5,
+          "Secernentea": 1
+        }
+      },
+      "family": {
+        "total_species": 6,
+        "majority_value": "Onchocercidae",
+        "confidence": 0.5,
+        "variants": {
+          "Onchocercidae": 3,
+          "Filariidae": 1,
+          "Setariidae": 2
+        }
+      }
+    },
+    "pilemia": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Coleoptera",
+        "confidence": 0.75,
+        "variants": {
+          "Coleoptera": 3,
+          "Lepidoptera": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Cerambycidae",
+        "confidence": 0.75,
+        "variants": {
+          "Cerambycidae": 3,
+          "Crambidae": 1
+        }
+      }
+    },
+    "vesperus": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Vesperidae",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Cerambycidae": 1,
+          "Vesperidae": 16
+        }
+      }
+    },
+    "valipora": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Dilepididae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Dilepididae": 6,
+          "Gryporhynchidae": 1
+        }
+      }
+    },
+    "euryte": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Copepoda",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hexanauplia": 1,
+          "Copepoda": 2
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Euryteidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Cyclopidae": 1,
+          "Euryteidae": 2
+        }
+      }
+    },
+    "megacyclops": {
+      "class": {
+        "total_species": 9,
+        "majority_value": "Hexanauplia",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Hexanauplia": 5,
+          "Copepoda": 4
+        }
+      }
+    },
+    "natula": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Gryllidae",
+        "confidence": 0.5,
+        "variants": {
+          "Gryllidae": 1,
+          "Trigonidiidae": 1
+        }
+      }
+    },
+    "stenonemobius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Gryllidae",
+        "confidence": 0.5,
+        "variants": {
+          "Gryllidae": 1,
+          "Trigonidiidae": 1
+        }
+      }
+    },
+    "chromadorita": {
+      "class": {
+        "total_species": 18,
+        "majority_value": "Chromadorea",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Chromadorea": 14,
+          "Adenophorea": 4
+        }
+      },
+      "family": {
+        "total_species": 18,
+        "majority_value": "Chromadoridae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Chromadoridae": 14,
+          "Hypodontolaimidae": 4
+        }
+      }
+    },
+    "neochromadora": {
+      "class": {
+        "total_species": 13,
+        "majority_value": "Chromadorea",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Chromadorea": 12,
+          "Adenophorea": 1
+        }
+      },
+      "family": {
+        "total_species": 13,
+        "majority_value": "Chromadoridae",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Chromadoridae": 12,
+          "Hypodontolaimidae": 1
+        }
+      }
+    },
+    "ilyocryptus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Macrothricidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Macrothricidae": 4,
+          "Ilyocryptidae": 3
+        }
+      }
+    },
+    "neossos": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Heleomyzidae",
+        "confidence": 0.5,
+        "variants": {
+          "Heleomyzidae": 1,
+          "Chiropteromyzidae": 1
+        }
+      }
+    },
+    "trixoscelis": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Trixoscelididae",
+        "confidence": 0.8461538461538461,
+        "variants": {
+          "Heleomyzidae": 4,
+          "Trixoscelididae": 22
+        }
+      }
+    },
+    "diaspis": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Diaspididae",
+        "confidence": 0.8,
+        "variants": {
+          "Diaspididae": 4,
+          "Coccidae": 1
+        }
+      }
+    },
+    "prolysiopetalum": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Schizopetalidae",
+        "confidence": 0.75,
+        "variants": {
+          "Schizopetalidae": 3,
+          "Callipodidae": 1
+        }
+      }
+    },
+    "leptochiton": {
+      "order": {
+        "total_species": 19,
+        "majority_value": "Lepidopleurida",
+        "confidence": 0.9473684210526315,
+        "variants": {
+          "Chitonida": 1,
+          "Lepidopleurida": 18
+        }
+      },
+      "family": {
+        "total_species": 19,
+        "majority_value": "Leptochitonidae",
+        "confidence": 0.9473684210526315,
+        "variants": {
+          "Chitonidae": 1,
+          "Leptochitonidae": 18
+        }
+      }
+    },
+    "timoniella": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Acanthostomidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Cryptogonimidae": 1,
+          "Acanthostomidae": 2
+        }
+      }
+    },
+    "ramulus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Phasmatidae",
+        "confidence": 0.5,
+        "variants": {
+          "Phasmatidae": 1,
+          "Heteronemiidae": 1
+        }
+      }
+    },
+    "chetogena": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Tachinidae",
+        "confidence": 0.9285714285714286,
+        "variants": {
+          "Tachinidae": 13,
+          "Nemestrinidae": 1
+        }
+      }
+    },
+    "aizobius": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Brentidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 2
+        }
+      }
+    },
+    "apion": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Brentidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Apionidae": 4,
+          "Brentidae": 5
+        }
+      }
+    },
+    "aspidapion": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Brentidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 2,
+          "Brentidae": 4
+        }
+      }
+    },
+    "catapion": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Apionidae",
+        "confidence": 0.6923076923076923,
+        "variants": {
+          "Apionidae": 9,
+          "Brentidae": 4
+        }
+      }
+    },
+    "ceratapion": {
+      "family": {
+        "total_species": 25,
+        "majority_value": "Apionidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apionidae": 15,
+          "Brentidae": 10
+        }
+      }
+    },
+    "cyanapion": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Brentidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 3,
+          "Brentidae": 6
+        }
+      }
+    },
+    "diplapion": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Brentidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Apionidae": 3,
+          "Brentidae": 4
+        }
+      }
+    },
+    "eutrichapion": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Brentidae",
+        "confidence": 0.5454545454545454,
+        "variants": {
+          "Apionidae": 5,
+          "Brentidae": 6
+        }
+      }
+    },
+    "exapion": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Apionidae",
+        "confidence": 0.7307692307692307,
+        "variants": {
+          "Apionidae": 19,
+          "Brentidae": 7
+        }
+      }
+    },
+    "helianthemapion": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 2,
+          "Brentidae": 2
+        }
+      }
+    },
+    "hemitrichapion": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Apionidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Apionidae": 7,
+          "Brentidae": 5
+        }
+      }
+    },
+    "holotrichapion": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Brentidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 6
+        }
+      }
+    },
+    "ischnopterapion": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Apionidae",
+        "confidence": 0.7,
+        "variants": {
+          "Apionidae": 7,
+          "Brentidae": 3
+        }
+      }
+    },
+    "kalcapion": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Brentidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 2
+        }
+      }
+    },
+    "lepidapion": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Apionidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Apionidae": 10,
+          "Brentidae": 2
+        }
+      }
+    },
+    "loborhynchapion": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Brentidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 2
+        }
+      }
+    },
+    "omphalapion": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Brentidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Apionidae": 3,
+          "Brentidae": 4
+        }
+      }
+    },
+    "oryxolaemus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 2,
+          "Brentidae": 2
+        }
+      }
+    },
+    "oxystoma": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Brentidae",
+        "confidence": 0.875,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 7
+        }
+      }
+    },
+    "perapion": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Brentidae",
+        "confidence": 0.6153846153846154,
+        "variants": {
+          "Apionidae": 5,
+          "Brentidae": 8
+        }
+      }
+    },
+    "phrissotrichum": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Apionidae",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Apionidae": 14,
+          "Brentidae": 1
+        }
+      }
+    },
+    "pirapion": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 1
+        }
+      }
+    },
+    "protapion": {
+      "family": {
+        "total_species": 28,
+        "majority_value": "Brentidae",
+        "confidence": 0.6071428571428571,
+        "variants": {
+          "Apionidae": 11,
+          "Brentidae": 17
+        }
+      }
+    },
+    "protopirapion": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 1
+        }
+      }
+    },
+    "pseudapion": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 2,
+          "Brentidae": 2
+        }
+      }
+    },
+    "pseudaplemonus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Apionidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apionidae": 3,
+          "Brentidae": 2
+        }
+      }
+    },
+    "squamapion": {
+      "family": {
+        "total_species": 21,
+        "majority_value": "Apionidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apionidae": 14,
+          "Brentidae": 7
+        }
+      }
+    },
+    "stenopterapion": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Apionidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Apionidae": 4,
+          "Brentidae": 3
+        }
+      }
+    },
+    "synapion": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 1
+        }
+      }
+    },
+    "taeniapion": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Apionidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apionidae": 3,
+          "Brentidae": 2
+        }
+      }
+    },
+    "taphrotopium": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Apionidae",
+        "confidence": 0.5,
+        "variants": {
+          "Apionidae": 1,
+          "Brentidae": 1
+        }
+      }
+    },
+    "ulopa": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Cicadellidae",
+        "confidence": 0.5,
+        "variants": {
+          "Cicadellidae": 1,
+          "Ulopidae": 1
+        }
+      }
+    },
+    "pilophorus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Miridae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Miridae": 10,
+          "Oxycarenidae": 1
+        }
+      }
+    },
+    "microphor": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Dolichopodidae",
+        "confidence": 0.625,
+        "variants": {
+          "Dolichopodidae": 5,
+          "Microphoridae": 3
+        }
+      }
+    },
+    "microphorella": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Dolichopodidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Dolichopodidae": 2,
+          "Microphoridae": 1
+        }
+      }
+    },
+    "schistostoma": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Microphoridae",
+        "confidence": 0.75,
+        "variants": {
+          "Dolichopodidae": 1,
+          "Microphoridae": 3
+        }
+      }
+    },
+    "ziminella": {
+      "phylum": {
+        "total_species": 2,
+        "majority_value": "Arthropoda",
+        "confidence": 0.5,
+        "variants": {
+          "Arthropoda": 1,
+          "Mollusca": 1
+        }
+      },
+      "class": {
+        "total_species": 2,
+        "majority_value": "Insecta",
+        "confidence": 0.5,
+        "variants": {
+          "Insecta": 1,
+          "Gastropoda": 1
+        }
+      },
+      "order": {
+        "total_species": 2,
+        "majority_value": "Diptera",
+        "confidence": 0.5,
+        "variants": {
+          "Diptera": 1,
+          "Nudibranchia": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Muscidae",
+        "confidence": 0.5,
+        "variants": {
+          "Muscidae": 1,
+          "Flabellinidae": 1
+        }
+      }
+    },
+    "portumnus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Portunidae",
+        "confidence": 0.5,
+        "variants": {
+          "Portunidae": 1,
+          "Carcinidae": 1
+        }
+      }
+    },
+    "goniodes": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Psocodea",
+        "confidence": 0.75,
+        "variants": {
+          "Psocodea": 3,
+          "Phthiraptera": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Philopteridae",
+        "confidence": 0.75,
+        "variants": {
+          "Philopteridae": 3,
+          "Goniodidae": 1
+        }
+      }
+    },
+    "eutrichota": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Anthomyiidae",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Anthomyiidae": 16,
+          "Anthomyzidae": 1
+        }
+      }
+    },
+    "fannia": {
+      "family": {
+        "total_species": 83,
+        "majority_value": "Fanniidae",
+        "confidence": 0.9879518072289156,
+        "variants": {
+          "Anthomyiidae": 1,
+          "Fanniidae": 82
+        }
+      }
+    },
+    "hydrophoria": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Anthomyiidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Anthomyiidae": 6,
+          "Anthomyzidae": 1
+        }
+      }
+    },
+    "symbiotes": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Anamorphidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Endomychidae": 1,
+          "Anamorphidae": 2
+        }
+      }
+    },
+    "lyctocoris": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Anthocoridae",
+        "confidence": 0.8,
+        "variants": {
+          "Anthocoridae": 4,
+          "Lyctocoridae": 1
+        }
+      }
+    },
+    "acompus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "aellopus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "blissus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Blissidae": 1
+        }
+      }
+    },
+    "cymus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Cymidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 2,
+          "Cymidae": 4
+        }
+      }
+    },
+    "dimorphopterus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Lygaeidae": 3,
+          "Blissidae": 1
+        }
+      }
+    },
+    "drymus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Lygaeidae": 4,
+          "Rhyparochromidae": 5
+        }
+      }
+    },
+    "emblethis": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.8125,
+        "variants": {
+          "Lygaeidae": 13,
+          "Rhyparochromidae": 3
+        }
+      }
+    },
+    "engistus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.75,
+        "variants": {
+          "Lygaeidae": 3,
+          "Geocoridae": 1
+        }
+      }
+    },
+    "eremocoris": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Lygaeidae": 3,
+          "Rhyparochromidae": 4
+        }
+      }
+    },
+    "geocoris": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 8,
+          "Geocoridae": 8
+        }
+      }
+    },
+    "gonianotus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "graptopeltus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "henestaris": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 2,
+          "Geocoridae": 2
+        }
+      }
+    },
+    "heterogaster": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Heterogastridae",
+        "confidence": 0.6,
+        "variants": {
+          "Lygaeidae": 2,
+          "Heterogastridae": 3
+        }
+      }
+    },
+    "ischnocoris": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 4,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "ischnodemus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.8,
+        "variants": {
+          "Lygaeidae": 4,
+          "Blissidae": 1
+        }
+      }
+    },
+    "lasiocoris": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "lasiosomus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "macroplax": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Oxycarenidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 1,
+          "Oxycarenidae": 2
+        }
+      }
+    },
+    "megalonotus": {
+      "family": {
+        "total_species": 20,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.7,
+        "variants": {
+          "Lygaeidae": 14,
+          "Rhyparochromidae": 6
+        }
+      }
+    },
+    "microplax": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6,
+        "variants": {
+          "Lygaeidae": 3,
+          "Oxycarenidae": 2
+        }
+      }
+    },
+    "oxycarenus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Oxycarenidae",
+        "confidence": 0.75,
+        "variants": {
+          "Lygaeidae": 1,
+          "Oxycarenidae": 3
+        }
+      }
+    },
+    "pachybrachius": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "peritrechus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.6363636363636364,
+        "variants": {
+          "Lygaeidae": 4,
+          "Rhyparochromidae": 7
+        }
+      }
+    },
+    "pionosomus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 4,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "platyplax": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 1,
+          "Heterogastridae": 1
+        }
+      }
+    },
+    "plinthisus": {
+      "family": {
+        "total_species": 27,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.9259259259259259,
+        "variants": {
+          "Lygaeidae": 25,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "pterotmetus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 1
+        }
+      }
+    },
+    "raglius": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "rhyparochromus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 4
+        }
+      }
+    },
+    "scolopostethus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.8,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 8
+        }
+      }
+    },
+    "stygnocoris": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6153846153846154,
+        "variants": {
+          "Lygaeidae": 8,
+          "Rhyparochromidae": 5
+        }
+      }
+    },
+    "taphropeltus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.6,
+        "variants": {
+          "Lygaeidae": 3,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "trapezonotus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Lygaeidae": 3,
+          "Rhyparochromidae": 4
+        }
+      }
+    },
+    "tropistethus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Lygaeidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Lygaeidae": 5,
+          "Rhyparochromidae": 2
+        }
+      }
+    },
+    "xanthochilus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Rhyparochromidae",
+        "confidence": 0.6,
+        "variants": {
+          "Lygaeidae": 2,
+          "Rhyparochromidae": 3
+        }
+      }
+    },
+    "arvicola": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Cricetidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Muridae": 1,
+          "Cricetidae": 2
+        }
+      }
+    },
+    "lemmus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Muridae",
+        "confidence": 0.5,
+        "variants": {
+          "Muridae": 1,
+          "Cricetidae": 1
+        }
+      }
+    },
+    "mesocricetus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Muridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Muridae": 2,
+          "Cricetidae": 1
+        }
+      }
+    },
+    "microtus": {
+      "family": {
+        "total_species": 22,
+        "majority_value": "Cricetidae",
+        "confidence": 0.5454545454545454,
+        "variants": {
+          "Muridae": 10,
+          "Cricetidae": 12
+        }
+      }
+    },
+    "acrocephalus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Acrocephalidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Acrocephalidae": 7,
+          "Sylviidae": 2
+        }
+      }
+    },
+    "hippolais": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Acrocephalidae",
+        "confidence": 0.75,
+        "variants": {
+          "Acrocephalidae": 3,
+          "Sylviidae": 1
+        }
+      }
+    },
+    "iduna": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Sylviidae",
+        "confidence": 0.8,
+        "variants": {
+          "Acrocephalidae": 1,
+          "Sylviidae": 4
+        }
+      }
+    },
+    "locustella": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Locustellidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Sylviidae": 2,
+          "Locustellidae": 4
+        }
+      }
+    },
+    "phylloscopus": {
+      "family": {
+        "total_species": 20,
+        "majority_value": "Phylloscopidae",
+        "confidence": 0.7,
+        "variants": {
+          "Sylviidae": 6,
+          "Phylloscopidae": 14
+        }
+      }
+    },
+    "acrometopa": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5,
+        "variants": {
+          "Phaneropteridae": 2,
+          "Tettigoniidae": 2
+        }
+      }
+    },
+    "barbitistes": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5,
+        "variants": {
+          "Phaneropteridae": 4,
+          "Tettigoniidae": 4
+        }
+      }
+    },
+    "isophya": {
+      "family": {
+        "total_species": 46,
+        "majority_value": "Tettigoniidae",
+        "confidence": 0.5217391304347826,
+        "variants": {
+          "Phaneropteridae": 22,
+          "Tettigoniidae": 24
+        }
+      }
+    },
+    "leptophyes": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Phaneropteridae": 5,
+          "Tettigoniidae": 4
+        }
+      }
+    },
+    "metaplastes": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5,
+        "variants": {
+          "Phaneropteridae": 2,
+          "Tettigoniidae": 2
+        }
+      }
+    },
+    "odontura": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.75,
+        "variants": {
+          "Phaneropteridae": 6,
+          "Tettigoniidae": 2
+        }
+      }
+    },
+    "phaneroptera": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5,
+        "variants": {
+          "Phaneropteridae": 2,
+          "Tettigoniidae": 2
+        }
+      }
+    },
+    "poecilimon": {
+      "family": {
+        "total_species": 71,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.6338028169014085,
+        "variants": {
+          "Phaneropteridae": 45,
+          "Tettigoniidae": 26
+        }
+      }
+    },
+    "polysarcus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Phaneropteridae",
+        "confidence": 0.5,
+        "variants": {
+          "Phaneropteridae": 1,
+          "Tettigoniidae": 1
+        }
+      }
+    },
+    "callimenus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Bradyporidae",
+        "confidence": 0.75,
+        "variants": {
+          "Tettigoniidae": 1,
+          "Bradyporidae": 3
+        }
+      }
+    },
+    "conocephalus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Tettigoniidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tettigoniidae": 5,
+          "Conocephalidae": 5
+        }
+      }
+    },
+    "cyrtaspis": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Tettigoniidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tettigoniidae": 1,
+          "Meconematidae": 1
+        }
+      }
+    },
+    "ephippiger": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Bradyporidae",
+        "confidence": 0.75,
+        "variants": {
+          "Tettigoniidae": 3,
+          "Bradyporidae": 9
+        }
+      }
+    },
+    "ephippigerida": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Bradyporidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Tettigoniidae": 2,
+          "Bradyporidae": 12
+        }
+      }
+    },
+    "neocallicrania": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Tettigoniidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Tettigoniidae": 5,
+          "Bradyporidae": 1
+        }
+      }
+    },
+    "platystolus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Tettigoniidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tettigoniidae": 1,
+          "Bradyporidae": 1
+        }
+      }
+    },
+    "pycnogaster": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Bradyporidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Tettigoniidae": 2,
+          "Bradyporidae": 7
+        }
+      }
+    },
+    "tibicina": {
+      "order": {
+        "total_species": 13,
+        "majority_value": "Hemiptera",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Orthoptera": 1,
+          "Hemiptera": 12
+        }
+      },
+      "family": {
+        "total_species": 13,
+        "majority_value": "Tibicinidae",
+        "confidence": 0.6153846153846154,
+        "variants": {
+          "Tettigoniidae": 1,
+          "Tibicinidae": 8,
+          "Cicadidae": 4
+        }
+      }
+    },
+    "anelasmocephalus": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Palpatores",
+        "confidence": 0.8461538461538461,
+        "variants": {
+          "Palpatores": 11,
+          "Trogulidae": 2
+        }
+      }
+    },
+    "astrobunus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Palpatores",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Palpatores": 6,
+          "Sclerosomatidae": 1
+        }
+      }
+    },
+    "bunochelis": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Palpatores",
+        "confidence": 0.5,
+        "variants": {
+          "Palpatores": 1,
+          "Phalangiidae": 1
+        }
+      }
+    },
+    "calathocratus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Trogulidae",
+        "confidence": 0.75,
+        "variants": {
+          "Palpatores": 1,
+          "Trogulidae": 3
+        }
+      }
+    },
+    "carinostoma": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Palpatores",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Palpatores": 2,
+          "Nemastomatidae": 1
+        }
+      }
+    },
+    "centetostoma": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Palpatores",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Palpatores": 12,
+          "Nemastomatidae": 1
+        }
+      }
+    },
+    "dasylobus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Palpatores",
+        "confidence": 0.5,
+        "variants": {
+          "Palpatores": 3,
+          "Phalangiidae": 3
+        }
+      }
+    },
+    "dicranolasma": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Palpatores",
+        "confidence": 0.8666666666666667,
+        "variants": {
+          "Palpatores": 13,
+          "Dicranolasmatidae": 2
+        }
+      }
+    },
+    "dicranopalpus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Palpatores",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Palpatores": 8,
+          "Phalangiidae": 4
+        }
+      }
+    },
+    "gyas": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Palpatores",
+        "confidence": 0.5,
+        "variants": {
+          "Palpatores": 1,
+          "Sclerosomatidae": 1
+        }
+      }
+    },
+    "histricostoma": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Palpatores",
+        "confidence": 0.6,
+        "variants": {
+          "Palpatores": 3,
+          "Nemastomatidae": 2
+        }
+      }
+    },
+    "homalenotus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Palpatores",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Palpatores": 5,
+          "Phalangiidae": 1
+        }
+      }
+    },
+    "homolophus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Phalangiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Palpatores": 1,
+          "Phalangiidae": 2
+        }
+      }
+    },
+    "ischyropsalis": {
+      "family": {
+        "total_species": 19,
+        "majority_value": "Palpatores",
+        "confidence": 0.7368421052631579,
+        "variants": {
+          "Palpatores": 14,
+          "Ischyropsalidae": 5
+        }
+      }
+    },
+    "lacinius": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Palpatores",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Palpatores": 5,
+          "Phalangiidae": 4
+        }
+      }
+    },
+    "leiobunum": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Sclerosomatidae",
+        "confidence": 0.5294117647058824,
+        "variants": {
+          "Palpatores": 8,
+          "Sclerosomatidae": 9
+        }
+      }
+    },
+    "megabunus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Palpatores",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Palpatores": 4,
+          "Phalangiidae": 3
+        }
+      }
+    },
+    "mitostoma": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Palpatores",
+        "confidence": 0.8181818181818182,
+        "variants": {
+          "Palpatores": 9,
+          "Nemastomatidae": 2
+        }
+      }
+    },
+    "nelima": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Palpatores",
+        "confidence": 0.6153846153846154,
+        "variants": {
+          "Palpatores": 8,
+          "Sclerosomatidae": 5
+        }
+      }
+    },
+    "nemastoma": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Nemastomatidae",
+        "confidence": 0.625,
+        "variants": {
+          "Palpatores": 3,
+          "Nemastomatidae": 5
+        }
+      }
+    },
+    "odiellus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Palpatores",
+        "confidence": 0.8,
+        "variants": {
+          "Palpatores": 8,
+          "Phalangiidae": 2
+        }
+      }
+    },
+    "opilio": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Palpatores",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Palpatores": 5,
+          "Phalangiidae": 4
+        }
+      }
+    },
+    "paranemastoma": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Palpatores",
+        "confidence": 0.75,
+        "variants": {
+          "Palpatores": 9,
+          "Nemastomatidae": 3
+        }
+      }
+    },
+    "paroligolophus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Palpatores",
+        "confidence": 0.5,
+        "variants": {
+          "Palpatores": 1,
+          "Phalangiidae": 1
+        }
+      }
+    },
+    "phalangium": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Phalangiidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Palpatores": 3,
+          "Phalangiidae": 4
+        }
+      }
+    },
+    "platybunus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Palpatores",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Palpatores": 5,
+          "Phalangiidae": 2
+        }
+      }
+    },
+    "rilaena": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Phalangiidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Palpatores": 3,
+          "Phalangiidae": 4
+        }
+      }
+    },
+    "sabacon": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Sabaconidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Palpatores": 4,
+          "Sabaconidae": 5
+        }
+      }
+    },
+    "trogulus": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Palpatores",
+        "confidence": 0.5882352941176471,
+        "variants": {
+          "Palpatores": 10,
+          "Trogulidae": 7
+        }
+      }
+    },
+    "acroperus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Chydoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Chydoridae": 2,
+          "Eurycercidae": 2
+        }
+      }
+    },
+    "alona": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Eurycercidae",
+        "confidence": 0.7307692307692307,
+        "variants": {
+          "Chydoridae": 7,
+          "Eurycercidae": 19
+        }
+      }
+    },
+    "alonopsis": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Chydoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 1
+        }
+      }
+    },
+    "anchistropus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Chydoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 1
+        }
+      }
+    },
+    "camptocercus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Eurycercidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 5
+        }
+      }
+    },
+    "chydorus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Eurycercidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Chydoridae": 2,
+          "Eurycercidae": 4
+        }
+      }
+    },
+    "disparalona": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Chydoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 1
+        }
+      }
+    },
+    "leydigia": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Chydoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 1
+        }
+      }
+    },
+    "picripleuroxus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Eurycercidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Chydoridae": 1,
+          "Eurycercidae": 2
+        }
+      }
+    },
+    "pleuroxus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Chydoridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Chydoridae": 4,
+          "Eurycercidae": 2
+        }
+      }
+    },
+    "palomena": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Pentatomidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Pentatomidae": 2,
+          "Cimicidae": 1
+        }
+      }
+    },
+    "micoletzkya": {
+      "class": {
+        "total_species": 9,
+        "majority_value": "Secernentea",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Chromadorea": 4,
+          "Secernentea": 5
+        }
+      },
+      "family": {
+        "total_species": 9,
+        "majority_value": "Neodiplogastridae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Diplogastridae": 4,
+          "Neodiplogastridae": 5
+        }
+      }
+    },
+    "oribotritia": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Oribotritiidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Euphthiracaridae": 1,
+          "Oribotritiidae": 5
+        }
+      }
+    },
+    "zygophylax": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Zygophylacidae",
+        "confidence": 0.875,
+        "variants": {
+          "Lafoeidae": 1,
+          "Zygophylacidae": 7
+        }
+      }
+    },
+    "buddelundiella": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Buddelundiellidae",
+        "confidence": 0.9166666666666666,
+        "variants": {
+          "Trichoniscidae": 1,
+          "Buddelundiellidae": 11
+        }
+      }
+    },
+    "drilus": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Drilidae",
+        "confidence": 0.5882352941176471,
+        "variants": {
+          "Elateridae": 7,
+          "Drilidae": 10
+        }
+      }
+    },
+    "malacogaster": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Elateridae",
+        "confidence": 0.5,
+        "variants": {
+          "Elateridae": 1,
+          "Drilidae": 1
+        }
+      }
+    },
+    "omalisus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Omalisidae",
+        "confidence": 0.9,
+        "variants": {
+          "Elateridae": 1,
+          "Omalisidae": 9
+        }
+      }
+    },
+    "actinella": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.9285714285714286,
+        "variants": {
+          "Hygromiidae": 13,
+          "Geomitridae": 1
+        }
+      }
+    },
+    "canariella": {
+      "family": {
+        "total_species": 23,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.9565217391304348,
+        "variants": {
+          "Hygromiidae": 22,
+          "Canariellidae": 1
+        }
+      }
+    },
+    "discula": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.5384615384615384,
+        "variants": {
+          "Hygromiidae": 7,
+          "Geomitridae": 6
+        }
+      }
+    },
+    "helicella": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hygromiidae": 8,
+          "Geomitridae": 4
+        }
+      }
+    },
+    "hystricella": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Hygromiidae": 3,
+          "Geomitridae": 3
+        }
+      }
+    },
+    "leptaxis": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Helicidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Hygromiidae": 2,
+          "Helicidae": 10
+        }
+      }
+    },
+    "lindholmiola": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.625,
+        "variants": {
+          "Hygromiidae": 5,
+          "Helicodontidae": 3
+        }
+      }
+    },
+    "montserratina": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hygromiidae": 2,
+          "Canariellidae": 1
+        }
+      }
+    },
+    "serratorotula": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Hygromiidae": 1,
+          "Geomitridae": 1
+        }
+      }
+    },
+    "sphincterochila": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Sphincterochilidae",
+        "confidence": 0.75,
+        "variants": {
+          "Hygromiidae": 1,
+          "Sphincterochilidae": 3
+        }
+      }
+    },
+    "xerocrassa": {
+      "family": {
+        "total_species": 47,
+        "majority_value": "Hygromiidae",
+        "confidence": 0.6595744680851063,
+        "variants": {
+          "Hygromiidae": 31,
+          "Geomitridae": 16
+        }
+      }
+    },
+    "monilearia": {
+      "order": {
+        "total_species": 17,
+        "majority_value": "Pulmonata",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Stylommatophora": 1,
+          "Pulmonata": 16
+        }
+      },
+      "family": {
+        "total_species": 17,
+        "majority_value": "Cochlicellidae",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Geomitridae": 1,
+          "Cochlicellidae": 16
+        }
+      }
+    },
+    "halobiotus": {
+      "order": {
+        "total_species": 3,
+        "majority_value": "Parachela",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Parachaela": 1,
+          "Parachela": 2
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Isohypsibiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hypsibiidae": 1,
+          "Isohypsibiidae": 2
+        }
+      }
+    },
+    "heptamelus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Heptamelidae",
+        "confidence": 0.75,
+        "variants": {
+          "Tenthredinidae": 1,
+          "Heptamelidae": 3
+        }
+      }
+    },
+    "haploposthia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Proporidae",
+        "confidence": 0.5,
+        "variants": {
+          "Proporidae": 2,
+          "Haploposthiidae": 2
+        }
+      }
+    },
+    "kuma": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Proporidae",
+        "confidence": 0.5,
+        "variants": {
+          "Proporidae": 1,
+          "Haploposthiidae": 1
+        }
+      }
+    },
+    "schistocephalus": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Diphyllobothriidea",
+        "confidence": 0.75,
+        "variants": {
+          "Diphyllobothriidea": 3,
+          "Pseudophyllidea": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Diphyllobothriidae",
+        "confidence": 0.75,
+        "variants": {
+          "Diphyllobothriidae": 3,
+          "Ligulidae": 1
+        }
+      }
+    },
+    "melinna": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Ampharetidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Ampharetidae": 5,
+          "Melinnidae": 1
+        }
+      }
+    },
+    "otolelus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Aderidae",
+        "confidence": 0.875,
+        "variants": {
+          "Aderidae": 7,
+          "Eucnemidae": 1
+        }
+      }
+    },
+    "trichotropis": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Neogastropoda",
+        "confidence": 0.75,
+        "variants": {
+          "Neogastropoda": 3,
+          "Littorinimorpha": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Cancellariidae",
+        "confidence": 0.75,
+        "variants": {
+          "Cancellariidae": 3,
+          "Capulidae": 1
+        }
+      }
+    },
+    "megastigmus": {
+      "family": {
+        "total_species": 30,
+        "majority_value": "Torymidae",
+        "confidence": 0.5,
+        "variants": {
+          "Torymidae": 15,
+          "Megastigmidae": 15
+        }
+      }
+    },
+    "adoretus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Rutelidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Rutelidae": 2,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "xenillus": {
+      "family": {
+        "total_species": 24,
+        "majority_value": "Xenillidae",
+        "confidence": 0.875,
+        "variants": {
+          "Liacaridae": 3,
+          "Xenillidae": 21
+        }
+      }
+    },
+    "bythinella": {
+      "family": {
+        "total_species": 104,
+        "majority_value": "Hydrobiidae",
+        "confidence": 0.5384615384615384,
+        "variants": {
+          "Hydrobiidae": 56,
+          "Bythinellidae": 48
+        }
+      }
+    },
+    "bythiospeum": {
+      "family": {
+        "total_species": 66,
+        "majority_value": "Hydrobiidae",
+        "confidence": 0.7121212121212122,
+        "variants": {
+          "Hydrobiidae": 47,
+          "Moitessieriidae": 19
+        }
+      }
+    },
+    "dianella": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Hydrobiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Hydrobiidae": 1,
+          "Pyrgulidae": 1
+        }
+      }
+    },
+    "heleobia": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Hydrobiidae",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Hydrobiidae": 14,
+          "Cochliopidae": 1
+        }
+      }
+    },
+    "pyrgula": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Pyrgulidae",
+        "confidence": 0.75,
+        "variants": {
+          "Hydrobiidae": 1,
+          "Pyrgulidae": 3
+        }
+      }
+    },
+    "vitrea": {
+      "order": {
+        "total_species": 57,
+        "majority_value": "Stylommatophora",
+        "confidence": 0.9298245614035088,
+        "variants": {
+          "Pulmonata": 4,
+          "Stylommatophora": 53
+        }
+      },
+      "family": {
+        "total_species": 57,
+        "majority_value": "Pristilomatidae",
+        "confidence": 0.9298245614035088,
+        "variants": {
+          "Zonitidae": 4,
+          "Pristilomatidae": 53
+        }
+      }
+    },
+    "cicadetta": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Tibicinidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Tibicinidae": 12,
+          "Cicadidae": 2
+        }
+      }
+    },
+    "tympanistalna": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Tibicinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tibicinidae": 1,
+          "Cicadidae": 1
+        }
+      }
+    },
+    "micrurides": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Lineidae",
+        "confidence": 0.5,
+        "variants": {
+          "Lineidae": 1,
+          "Cerebratulidae": 1
+        }
+      }
+    },
+    "paractinolaimus": {
+      "class": {
+        "total_species": 4,
+        "majority_value": "Adenophorea",
+        "confidence": 0.75,
+        "variants": {
+          "Adenophorea": 3,
+          "Enoplea": 1
+        }
+      }
+    },
+    "afranthidium": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megachilidae": 2,
+          "Apidae": 2
+        }
+      }
+    },
+    "anthidium": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Megachilidae",
+        "confidence": 0.7222222222222222,
+        "variants": {
+          "Megachilidae": 13,
+          "Apidae": 5
+        }
+      }
+    },
+    "chalicodoma": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Apidae",
+        "confidence": 0.6,
+        "variants": {
+          "Megachilidae": 2,
+          "Apidae": 3
+        }
+      }
+    },
+    "chelostoma": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megachilidae": 8,
+          "Apidae": 8
+        }
+      }
+    },
+    "coelioxys": {
+      "family": {
+        "total_species": 25,
+        "majority_value": "Megachilidae",
+        "confidence": 0.76,
+        "variants": {
+          "Megachilidae": 19,
+          "Apidae": 6
+        }
+      }
+    },
+    "dioxys": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Apidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Megachilidae": 3,
+          "Apidae": 4
+        }
+      }
+    },
+    "heriades": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megachilidae": 3,
+          "Apidae": 3
+        }
+      }
+    },
+    "hoplitis": {
+      "family": {
+        "total_species": 93,
+        "majority_value": "Apidae",
+        "confidence": 0.5698924731182796,
+        "variants": {
+          "Megachilidae": 40,
+          "Apidae": 53
+        }
+      }
+    },
+    "icteranthidium": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megachilidae": 2,
+          "Apidae": 2
+        }
+      }
+    },
+    "megachile": {
+      "family": {
+        "total_species": 88,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5454545454545454,
+        "variants": {
+          "Megachilidae": 48,
+          "Apidae": 40
+        }
+      }
+    },
+    "osmia": {
+      "family": {
+        "total_species": 103,
+        "majority_value": "Megachilidae",
+        "confidence": 0.6019417475728155,
+        "variants": {
+          "Megachilidae": 62,
+          "Apidae": 41
+        }
+      }
+    },
+    "protosmia": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Megachilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megachilidae": 6,
+          "Apidae": 6
+        }
+      }
+    },
+    "pseudoanthidium": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Megachilidae",
+        "confidence": 0.8,
+        "variants": {
+          "Megachilidae": 8,
+          "Apidae": 2
+        }
+      }
+    },
+    "rhodanthidium": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Megachilidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Megachilidae": 6,
+          "Apidae": 1
+        }
+      }
+    },
+    "stelis": {
+      "family": {
+        "total_species": 25,
+        "majority_value": "Megachilidae",
+        "confidence": 0.52,
+        "variants": {
+          "Megachilidae": 13,
+          "Apidae": 12
+        }
+      }
+    },
+    "trachusa": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Megachilidae",
+        "confidence": 0.75,
+        "variants": {
+          "Megachilidae": 6,
+          "Apidae": 2
+        }
+      }
+    },
+    "andrena": {
+      "family": {
+        "total_species": 414,
+        "majority_value": "Andrenidae",
+        "confidence": 0.5531400966183575,
+        "variants": {
+          "Apidae": 185,
+          "Andrenidae": 229
+        }
+      }
+    },
+    "camptopoeum": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Apidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apidae": 3,
+          "Andrenidae": 2
+        }
+      }
+    },
+    "colletes": {
+      "family": {
+        "total_species": 60,
+        "majority_value": "Colletidae",
+        "confidence": 0.6166666666666667,
+        "variants": {
+          "Apidae": 23,
+          "Colletidae": 37
+        }
+      }
+    },
+    "dasypoda": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Melittidae",
+        "confidence": 0.6470588235294118,
+        "variants": {
+          "Apidae": 6,
+          "Melittidae": 11
+        }
+      }
+    },
+    "dufourea": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Halictidae",
+        "confidence": 0.5625,
+        "variants": {
+          "Apidae": 7,
+          "Halictidae": 9
+        }
+      }
+    },
+    "eucera": {
+      "order": {
+        "total_species": 82,
+        "majority_value": "Hymenoptera",
+        "confidence": 0.9878048780487805,
+        "variants": {
+          "Hymenoptera": 81,
+          "Diptera": 1
+        }
+      },
+      "family": {
+        "total_species": 82,
+        "majority_value": "Apidae",
+        "confidence": 0.9878048780487805,
+        "variants": {
+          "Apidae": 81,
+          "Keroplatidae": 1
+        }
+      }
+    },
+    "flavipanurgus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Andrenidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Apidae": 2,
+          "Andrenidae": 5
+        }
+      }
+    },
+    "halictus": {
+      "family": {
+        "total_species": 69,
+        "majority_value": "Halictidae",
+        "confidence": 0.5652173913043478,
+        "variants": {
+          "Apidae": 30,
+          "Halictidae": 39
+        }
+      }
+    },
+    "hylaeus": {
+      "family": {
+        "total_species": 87,
+        "majority_value": "Colletidae",
+        "confidence": 0.6436781609195402,
+        "variants": {
+          "Apidae": 31,
+          "Colletidae": 56
+        }
+      }
+    },
+    "lasioglossum": {
+      "family": {
+        "total_species": 202,
+        "majority_value": "Halictidae",
+        "confidence": 0.5742574257425742,
+        "variants": {
+          "Apidae": 86,
+          "Halictidae": 116
+        }
+      }
+    },
+    "melitta": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Apidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apidae": 9,
+          "Melittidae": 6
+        }
+      }
+    },
+    "melitturga": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Andrenidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apidae": 2,
+          "Andrenidae": 3
+        }
+      }
+    },
+    "nomiapis": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Halictidae",
+        "confidence": 0.6,
+        "variants": {
+          "Apidae": 2,
+          "Halictidae": 3
+        }
+      }
+    },
+    "nomioides": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Halictidae",
+        "confidence": 0.75,
+        "variants": {
+          "Apidae": 1,
+          "Halictidae": 3
+        }
+      }
+    },
+    "panurginus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Andrenidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apidae": 3,
+          "Andrenidae": 6
+        }
+      }
+    },
+    "panurgus": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Apidae",
+        "confidence": 0.5625,
+        "variants": {
+          "Apidae": 9,
+          "Andrenidae": 7
+        }
+      }
+    },
+    "pseudapis": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Apidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apidae": 4,
+          "Halictidae": 2
+        }
+      }
+    },
+    "rophites": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Apidae",
+        "confidence": 0.6153846153846154,
+        "variants": {
+          "Apidae": 8,
+          "Halictidae": 5
+        }
+      }
+    },
+    "sphecodes": {
+      "family": {
+        "total_species": 44,
+        "majority_value": "Halictidae",
+        "confidence": 0.8636363636363636,
+        "variants": {
+          "Apidae": 6,
+          "Halictidae": 38
+        }
+      }
+    },
+    "systropha": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Halictidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Apidae": 1,
+          "Halictidae": 2
+        }
+      }
+    },
+    "coelotes": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Amaurobiidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Agelenidae": 4,
+          "Amaurobiidae": 14
+        }
+      }
+    },
+    "pireneitega": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Agelenidae",
+        "confidence": 0.5,
+        "variants": {
+          "Agelenidae": 2,
+          "Amaurobiidae": 2
+        }
+      }
+    },
+    "urocoras": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Amaurobiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Agelenidae": 1,
+          "Amaurobiidae": 2
+        }
+      }
+    },
+    "sphaeriestes": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Salpingidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Salpingidae": 6,
+          "Dermestidae": 1
+        }
+      }
+    },
+    "dryadaula": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Dryadaulidae",
+        "confidence": 0.625,
+        "variants": {
+          "Tineidae": 3,
+          "Dryadaulidae": 5
+        }
+      }
+    },
+    "eudarcia": {
+      "family": {
+        "total_species": 50,
+        "majority_value": "Tineidae",
+        "confidence": 0.56,
+        "variants": {
+          "Tineidae": 28,
+          "Meessiidae": 22
+        }
+      }
+    },
+    "blastobasis": {
+      "family": {
+        "total_species": 44,
+        "majority_value": "Blastobasidae",
+        "confidence": 0.9772727272727273,
+        "variants": {
+          "Lypusidae": 1,
+          "Blastobasidae": 43
+        }
+      }
+    },
+    "agonopterix": {
+      "family": {
+        "total_species": 111,
+        "majority_value": "Depressariidae",
+        "confidence": 0.8288288288288288,
+        "variants": {
+          "Elachistidae": 19,
+          "Depressariidae": 92
+        }
+      }
+    },
+    "anchinia": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Depressariidae",
+        "confidence": 0.8,
+        "variants": {
+          "Elachistidae": 1,
+          "Depressariidae": 4
+        }
+      }
+    },
+    "depressaria": {
+      "family": {
+        "total_species": 70,
+        "majority_value": "Depressariidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Elachistidae": 10,
+          "Depressariidae": 60
+        }
+      }
+    },
+    "ethmia": {
+      "family": {
+        "total_species": 33,
+        "majority_value": "Elachistidae",
+        "confidence": 0.6060606060606061,
+        "variants": {
+          "Elachistidae": 20,
+          "Depressariidae": 13
+        }
+      }
+    },
+    "exaeretia": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Depressariidae",
+        "confidence": 0.6,
+        "variants": {
+          "Elachistidae": 6,
+          "Depressariidae": 9
+        }
+      }
+    },
+    "fuchsia": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Elachistidae",
+        "confidence": 0.5,
+        "variants": {
+          "Elachistidae": 1,
+          "Depressariidae": 1
+        }
+      }
+    },
+    "odites": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Depressariidae",
+        "confidence": 0.5,
+        "variants": {
+          "Depressariidae": 1,
+          "Lecithoceridae": 1
+        }
+      }
+    },
+    "orophia": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Depressariidae",
+        "confidence": 0.8,
+        "variants": {
+          "Depressariidae": 4,
+          "Oecophoridae": 1
+        }
+      }
+    },
+    "dendrocygna": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Anatidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Anatidae": 2,
+          "Dendrocygnidae": 1
+        }
+      }
+    },
+    "corimalia": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Nanophyidae",
+        "confidence": 0.875,
+        "variants": {
+          "Brentidae": 1,
+          "Nanophyidae": 7
+        }
+      }
+    },
+    "dieckmanniellus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Brentidae",
+        "confidence": 0.5,
+        "variants": {
+          "Brentidae": 2,
+          "Nanophyidae": 2
+        }
+      }
+    },
+    "hypophyes": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Brentidae",
+        "confidence": 0.5,
+        "variants": {
+          "Brentidae": 1,
+          "Nanophyidae": 1
+        }
+      }
+    },
+    "nanomimus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Nanophyidae",
+        "confidence": 0.8,
+        "variants": {
+          "Brentidae": 1,
+          "Nanophyidae": 4
+        }
+      }
+    },
+    "nanophyes": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Brentidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Brentidae": 5,
+          "Nanophyidae": 2
+        }
+      }
+    },
+    "argyroneta": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Dictynidae",
+        "confidence": 0.5,
+        "variants": {
+          "Dictynidae": 1,
+          "Cybaeidae": 1
+        }
+      }
+    },
+    "cicurina": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Dictynidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Dictynidae": 2,
+          "Hahniidae": 1
+        }
+      }
+    },
+    "mastigusa": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Hahniidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Dictynidae": 1,
+          "Hahniidae": 2
+        }
+      }
+    },
+    "myozona": {
+      "phylum": {
+        "total_species": 3,
+        "majority_value": "Nemertea",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Nemertea": 2,
+          "Platyhelminthes": 1
+        }
+      },
+      "class": {
+        "total_species": 3,
+        "majority_value": "Hoplonemertea",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Hoplonemertea": 2,
+          "Rhabditophora": 1
+        }
+      },
+      "order": {
+        "total_species": 3,
+        "majority_value": "Monostilifera",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Monostilifera": 2,
+          "Macrostomida": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "WORMS",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "WORMS": 2,
+          "Macrostomidae": 1
+        }
+      }
+    },
+    "scolia": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Scoliidae",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Vespidae": 1,
+          "Scoliidae": 12
+        }
+      }
+    },
+    "aldisa": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Cadlinidae",
+        "confidence": 0.6,
+        "variants": {
+          "Cadlinidae": 3,
+          "Dorididae": 2
+        }
+      }
+    },
+    "pleurotomella": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Raphitomidae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Raphitomidae": 10,
+          "Clathurellidae": 1
+        }
+      }
+    },
+    "wiedemannia": {
+      "family": {
+        "total_species": 71,
+        "majority_value": "Empididae",
+        "confidence": 0.9859154929577465,
+        "variants": {
+          "Hybotidae": 1,
+          "Empididae": 70
+        }
+      }
+    },
+    "ludita": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Tiphiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Bethylidae": 1,
+          "Tiphiidae": 4
+        }
+      }
+    },
+    "allobelba": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Belbidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Belbidae": 5,
+          "Damaeidae": 1
+        }
+      }
+    },
+    "damaeus": {
+      "family": {
+        "total_species": 38,
+        "majority_value": "Damaeidae",
+        "confidence": 0.9210526315789473,
+        "variants": {
+          "Belbidae": 2,
+          "Damaeidae": 35,
+          "Belbodamaeidae": 1
+        }
+      }
+    },
+    "metabelba": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Belbidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Belbidae": 16,
+          "Damaeidae": 2
+        }
+      }
+    },
+    "tokukobelba": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Belbidae",
+        "confidence": 0.5,
+        "variants": {
+          "Belbidae": 1,
+          "Damaeidae": 1
+        }
+      }
+    },
+    "porobelba": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Damaeidae",
+        "confidence": 0.5,
+        "variants": {
+          "Damaeidae": 1,
+          "Belbodamaeidae": 1
+        }
+      }
+    },
+    "discolaimus": {
+      "class": {
+        "total_species": 8,
+        "majority_value": "Adenophorea",
+        "confidence": 0.875,
+        "variants": {
+          "Enoplea": 1,
+          "Adenophorea": 7
+        }
+      },
+      "family": {
+        "total_species": 8,
+        "majority_value": "Discolaimidae",
+        "confidence": 0.875,
+        "variants": {
+          "Qudsianematidae": 1,
+          "Discolaimidae": 7
+        }
+      }
+    },
+    "helicodonta": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Helicodontidae",
+        "confidence": 0.75,
+        "variants": {
+          "Helicidae": 1,
+          "Helicodontidae": 3
+        }
+      }
+    },
+    "oestophora": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Helicidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Helicidae": 10,
+          "Trissexodontidae": 2
+        }
+      }
+    },
+    "octodrilus": {
+      "family": {
+        "total_species": 41,
+        "majority_value": "Lumbricidae",
+        "confidence": 0.975609756097561,
+        "variants": {
+          "Lumbricidae": 40,
+          "Hormogastridae": 1
+        }
+      }
+    },
+    "euxinia": {
+      "phylum": {
+        "total_species": 5,
+        "majority_value": "Arthropoda",
+        "confidence": 0.6,
+        "variants": {
+          "Platyhelminthes": 2,
+          "Arthropoda": 3
+        }
+      },
+      "class": {
+        "total_species": 5,
+        "majority_value": "Malacostraca",
+        "confidence": 0.6,
+        "variants": {
+          "Prolecithophora": 2,
+          "Malacostraca": 3
+        }
+      },
+      "family": {
+        "total_species": 5,
+        "majority_value": "Gammaridae",
+        "confidence": 0.6,
+        "variants": {
+          "Pseudostomidae": 2,
+          "Gammaridae": 3
+        }
+      }
+    },
+    "aplocnemus": {
+      "family": {
+        "total_species": 70,
+        "majority_value": "Dasytidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Dasytidae": 60,
+          "Rhadalidae": 10
+        }
+      }
+    },
+    "danacea": {
+      "family": {
+        "total_species": 124,
+        "majority_value": "Dasytidae",
+        "confidence": 0.9274193548387096,
+        "variants": {
+          "Dasytidae": 115,
+          "Melyridae": 9
+        }
+      }
+    },
+    "dasytes": {
+      "family": {
+        "total_species": 75,
+        "majority_value": "Dasytidae",
+        "confidence": 0.7466666666666667,
+        "variants": {
+          "Dasytidae": 56,
+          "Melyridae": 19
+        }
+      }
+    },
+    "divales": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Dasytidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Dasytidae": 6,
+          "Melyridae": 1
+        }
+      }
+    },
+    "dolichosoma": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Dasytidae",
+        "confidence": 0.75,
+        "variants": {
+          "Dasytidae": 3,
+          "Melyridae": 1
+        }
+      }
+    },
+    "enicopus": {
+      "family": {
+        "total_species": 27,
+        "majority_value": "Dasytidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Dasytidae": 24,
+          "Melyridae": 3
+        }
+      }
+    },
+    "psilothrix": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Dasytidae",
+        "confidence": 0.7,
+        "variants": {
+          "Dasytidae": 7,
+          "Melyridae": 3
+        }
+      }
+    },
+    "trichoceble": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Dasytidae",
+        "confidence": 0.875,
+        "variants": {
+          "Dasytidae": 14,
+          "Rhadalidae": 2
+        }
+      }
+    },
+    "minunthozetes": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Mycobatidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Mycobatidae": 7,
+          "Punctoribatidae": 2
+        }
+      }
+    },
+    "mycobates": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Mycobatidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Mycobatidae": 8,
+          "Punctoribatidae": 4
+        }
+      }
+    },
+    "punctoribates": {
+      "family": {
+        "total_species": 20,
+        "majority_value": "Mycobatidae",
+        "confidence": 0.9,
+        "variants": {
+          "Mycobatidae": 18,
+          "Punctoribatidae": 2
+        }
+      }
+    },
+    "zachvatkinibates": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Mycobatidae",
+        "confidence": 0.5,
+        "variants": {
+          "Mycobatidae": 1,
+          "Humerobatidae": 1
+        }
+      }
+    },
+    "tarentola": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Gekkonidae",
+        "confidence": 0.8,
+        "variants": {
+          "Gekkonidae": 4,
+          "Phyllodactylidae": 1
+        }
+      }
+    },
+    "atropacarus": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Steganacaridae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Steganacaridae": 12,
+          "Phthiracaridae": 2
+        }
+      }
+    },
+    "hoplophthiracarus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Steganacaridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Steganacaridae": 4,
+          "Phthiracaridae": 2
+        }
+      }
+    },
+    "steganacarus": {
+      "family": {
+        "total_species": 40,
+        "majority_value": "Steganacaridae",
+        "confidence": 0.725,
+        "variants": {
+          "Steganacaridae": 29,
+          "Phthiracaridae": 11
+        }
+      }
+    },
+    "alysson": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Bembicidae",
+        "confidence": 0.6,
+        "variants": {
+          "Crabronidae": 2,
+          "Bembicidae": 3
+        }
+      }
+    },
+    "ammoplanus": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Crabronidae",
+        "confidence": 0.6875,
+        "variants": {
+          "Crabronidae": 11,
+          "Ammoplanidae": 5
+        }
+      }
+    },
+    "astata": {
+      "family": {
+        "total_species": 15,
+        "majority_value": "Crabronidae",
+        "confidence": 0.6,
+        "variants": {
+          "Crabronidae": 9,
+          "Astatidae": 6
+        }
+      }
+    },
+    "bembecinus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Crabronidae": 5,
+          "Bembicidae": 4
+        }
+      }
+    },
+    "bembix": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Bembicidae",
+        "confidence": 0.6875,
+        "variants": {
+          "Crabronidae": 5,
+          "Bembicidae": 11
+        }
+      }
+    },
+    "cerceris": {
+      "family": {
+        "total_species": 45,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5111111111111111,
+        "variants": {
+          "Crabronidae": 23,
+          "Philanthidae": 22
+        }
+      }
+    },
+    "didineis": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Crabronidae": 4,
+          "Bembicidae": 3
+        }
+      }
+    },
+    "diodontus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Pemphredonidae",
+        "confidence": 0.75,
+        "variants": {
+          "Crabronidae": 3,
+          "Pemphredonidae": 9
+        }
+      }
+    },
+    "dryudella": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Astatidae",
+        "confidence": 0.5384615384615384,
+        "variants": {
+          "Crabronidae": 6,
+          "Astatidae": 7
+        }
+      }
+    },
+    "entomosericus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5,
+        "variants": {
+          "Crabronidae": 1,
+          "Pemphredonidae": 1
+        }
+      }
+    },
+    "gorytes": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Bembicidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Crabronidae": 6,
+          "Bembicidae": 8
+        }
+      }
+    },
+    "harpactus": {
+      "family": {
+        "total_species": 22,
+        "majority_value": "Bembicidae",
+        "confidence": 0.8181818181818182,
+        "variants": {
+          "Crabronidae": 4,
+          "Bembicidae": 18
+        }
+      }
+    },
+    "hoplisoides": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Crabronidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Crabronidae": 2,
+          "Bembicidae": 1
+        }
+      }
+    },
+    "lestiphorus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5,
+        "variants": {
+          "Crabronidae": 1,
+          "Bembicidae": 1
+        }
+      }
+    },
+    "mimesa": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5,
+        "variants": {
+          "Crabronidae": 5,
+          "Psenidae": 5
+        }
+      }
+    },
+    "mimumesa": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Psenidae",
+        "confidence": 0.75,
+        "variants": {
+          "Crabronidae": 2,
+          "Psenidae": 6
+        }
+      }
+    },
+    "nysson": {
+      "family": {
+        "total_species": 33,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5757575757575758,
+        "variants": {
+          "Crabronidae": 19,
+          "Bembicidae": 14
+        }
+      }
+    },
+    "oryttus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Crabronidae",
+        "confidence": 0.5,
+        "variants": {
+          "Crabronidae": 1,
+          "Bembicidae": 1
+        }
+      }
+    },
+    "passaloecus": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Pemphredonidae",
+        "confidence": 0.7692307692307693,
+        "variants": {
+          "Crabronidae": 3,
+          "Pemphredonidae": 10
+        }
+      }
+    },
+    "philanthus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Philanthidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Crabronidae": 2,
+          "Philanthidae": 5
+        }
+      }
+    },
+    "psenulus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Psenidae",
+        "confidence": 0.8181818181818182,
+        "variants": {
+          "Crabronidae": 2,
+          "Psenidae": 9
+        }
+      }
+    },
+    "spilomena": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Pemphredonidae",
+        "confidence": 0.875,
+        "variants": {
+          "Crabronidae": 1,
+          "Pemphredonidae": 7
+        }
+      }
+    },
+    "stizoides": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Bembicidae",
+        "confidence": 0.75,
+        "variants": {
+          "Crabronidae": 1,
+          "Bembicidae": 3
+        }
+      }
+    },
+    "stizus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Crabronidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Crabronidae": 7,
+          "Bembicidae": 1,
+          "Tiphiidae": 1
+        }
+      }
+    },
+    "amadotrogus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.875,
+        "variants": {
+          "Melolonthidae": 7,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "ceramida": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Melolonthidae": 10,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "chasmatopterus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.75,
+        "variants": {
+          "Melolonthidae": 9,
+          "Scarabaeidae": 3
+        }
+      }
+    },
+    "euserica": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.875,
+        "variants": {
+          "Melolonthidae": 7,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "firminus": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.7,
+        "variants": {
+          "Melolonthidae": 7,
+          "Scarabaeidae": 3
+        }
+      }
+    },
+    "hymenoplia": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Melolonthidae",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Melolonthidae": 16,
+          "Scarabaeidae": 1
+        }
+      }
+    },
+    "amphipsylla": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Ceratophyllidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Ceratophyllidae": 10,
+          "Leptopsyllidae": 2
+        }
+      }
+    },
+    "leptopsylla": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Ceratophyllidae",
+        "confidence": 0.75,
+        "variants": {
+          "Ceratophyllidae": 3,
+          "Leptopsyllidae": 1
+        }
+      }
+    },
+    "peromyscopsylla": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Ceratophyllidae",
+        "confidence": 0.6,
+        "variants": {
+          "Ceratophyllidae": 3,
+          "Leptopsyllidae": 2
+        }
+      }
+    },
+    "artemia": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Malacostraca",
+        "confidence": 0.5,
+        "variants": {
+          "Malacostraca": 1,
+          "Branchiopoda": 1
+        }
+      },
+      "order": {
+        "total_species": 2,
+        "majority_value": "Amphipoda",
+        "confidence": 0.5,
+        "variants": {
+          "Amphipoda": 1,
+          "Anostraca": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Gammaridae",
+        "confidence": 0.5,
+        "variants": {
+          "Gammaridae": 1,
+          "Artemiidae": 1
+        }
+      }
+    },
+    "iphigenella": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Gammaridae",
+        "confidence": 0.5,
+        "variants": {
+          "Gammaridae": 1,
+          "Iphigenellidae": 1
+        }
+      }
+    },
+    "pontogammarus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Pontogammaridae",
+        "confidence": 0.8,
+        "variants": {
+          "Gammaridae": 1,
+          "Pontogammaridae": 4
+        }
+      }
+    },
+    "pseudoniphargus": {
+      "family": {
+        "total_species": 53,
+        "majority_value": "Pseudoniphargidae",
+        "confidence": 0.5283018867924528,
+        "variants": {
+          "Gammaridae": 25,
+          "Pseudoniphargidae": 28
+        }
+      }
+    },
+    "stenogammarus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Gammaridae",
+        "confidence": 0.75,
+        "variants": {
+          "Gammaridae": 3,
+          "Pontogammaridae": 1
+        }
+      }
+    },
+    "synurella": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Crangonyctidae",
+        "confidence": 0.6,
+        "variants": {
+          "Gammaridae": 2,
+          "Crangonyctidae": 3
+        }
+      }
+    },
+    "amblyomma": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Amblyommidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Amblyommidae": 2,
+          "Ixodidae": 1
+        }
+      }
+    },
+    "dermacentor": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Amblyommidae",
+        "confidence": 0.6,
+        "variants": {
+          "Amblyommidae": 3,
+          "Ixodidae": 2
+        }
+      }
+    },
+    "haemaphysalis": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Ixodidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Amblyommidae": 2,
+          "Ixodidae": 5
+        }
+      }
+    },
+    "hyalomma": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ixodidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Amblyommidae": 4,
+          "Ixodidae": 5
+        }
+      }
+    },
+    "rhipicephalus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ixodidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Amblyommidae": 3,
+          "Ixodidae": 6
+        }
+      }
+    },
+    "bathyraja": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Rajidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Rajidae": 6,
+          "Arhynchobatidae": 1
+        }
+      }
+    },
+    "ameles": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Mantidae",
+        "confidence": 0.9,
+        "variants": {
+          "Mantidae": 9,
+          "Amelidae": 1
+        }
+      }
+    },
+    "ctenobelba": {
+      "family": {
+        "total_species": 20,
+        "majority_value": "Ctenobelbidae",
+        "confidence": 0.85,
+        "variants": {
+          "Amerobelbidae": 3,
+          "Ctenobelbidae": 17
+        }
+      }
+    },
+    "glabellula": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Mythicomyiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Bombyliidae": 1,
+          "Mythicomyiidae": 4
+        }
+      }
+    },
+    "lyctus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Lyctidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Bostrichidae": 4,
+          "Lyctidae": 5
+        }
+      }
+    },
+    "trogoxylon": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Bostrichidae",
+        "confidence": 0.5,
+        "variants": {
+          "Bostrichidae": 1,
+          "Lyctidae": 1
+        }
+      }
+    },
+    "skrjabinoplagiorchis": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Plagiorchiida",
+        "confidence": 0.75,
+        "variants": {
+          "Opisthorchiida": 1,
+          "Plagiorchiida": 3
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Plagiorchiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Opisthorchiidae": 1,
+          "Plagiorchiidae": 3
+        }
+      }
+    },
+    "georissus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Georissidae",
+        "confidence": 0.8,
+        "variants": {
+          "Hydrophilidae": 1,
+          "Georissidae": 4
+        }
+      }
+    },
+    "helophorus": {
+      "family": {
+        "total_species": 69,
+        "majority_value": "Hydrophilidae",
+        "confidence": 0.5362318840579711,
+        "variants": {
+          "Hydrophilidae": 37,
+          "Helophoridae": 32
+        }
+      }
+    },
+    "hydrochus": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Hydrophilidae",
+        "confidence": 0.5294117647058824,
+        "variants": {
+          "Hydrophilidae": 9,
+          "Hydrochidae": 8
+        }
+      }
+    },
+    "rhopalohelophorus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Hydrophilidae",
+        "confidence": 0.5,
+        "variants": {
+          "Hydrophilidae": 1,
+          "Helophoridae": 1
+        }
+      }
+    },
+    "lepidoniscus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Philosciidae",
+        "confidence": 0.5,
+        "variants": {
+          "Philosciidae": 2,
+          "Oniscidae": 2
+        }
+      }
+    },
+    "idomene": {
+      "order": {
+        "total_species": 2,
+        "majority_value": "Harpacticoida",
+        "confidence": 0.5,
+        "variants": {
+          "Harpacticoida": 1,
+          "Cyclopoida": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Pseudotachidiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Pseudotachidiidae": 1,
+          "Clausidiidae": 1
+        }
+      }
+    },
+    "tschertkovilepis": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Hymenolepididae",
+        "confidence": 0.8,
+        "variants": {
+          "Hymenolepididae": 4,
+          "Taeniidae": 1
+        }
+      }
+    },
+    "ancylus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Ancylidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Planorbidae": 2,
+          "Ancylidae": 5
+        }
+      }
+    },
+    "grynocharis": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Trogositidae",
+        "confidence": 0.5,
+        "variants": {
+          "Trogositidae": 1,
+          "Lophocateridae": 1
+        }
+      }
+    },
+    "nemozoma": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Trogossitidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Trogositidae": 1,
+          "Trogossitidae": 2
+        }
+      }
+    },
+    "tenebroides": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Trogositidae",
+        "confidence": 0.6,
+        "variants": {
+          "Trogositidae": 3,
+          "Trogossitidae": 2
+        }
+      }
+    },
+    "thymalus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Thymalidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Trogositidae": 1,
+          "Thymalidae": 2
+        }
+      }
+    },
+    "oplisa": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Calliphoridae",
+        "confidence": 0.5,
+        "variants": {
+          "Calliphoridae": 2,
+          "Rhinophoridae": 2
+        }
+      }
+    },
+    "paykullia": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Rhinophoridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Calliphoridae": 2,
+          "Rhinophoridae": 4
+        }
+      }
+    },
+    "phyto": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Rhinophoridae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Calliphoridae": 2,
+          "Rhinophoridae": 10
+        }
+      }
+    },
+    "pollenia": {
+      "family": {
+        "total_species": 33,
+        "majority_value": "Calliphoridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Calliphoridae": 22,
+          "Polleniidae": 11
+        }
+      }
+    },
+    "stevenia": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Rhinophoridae",
+        "confidence": 0.7857142857142857,
+        "variants": {
+          "Calliphoridae": 3,
+          "Rhinophoridae": 11
+        }
+      }
+    },
+    "toxocara": {
+      "class": {
+        "total_species": 5,
+        "majority_value": "Enoplea",
+        "confidence": 0.6,
+        "variants": {
+          "Chromadorea": 2,
+          "Enoplea": 3
+        }
+      },
+      "order": {
+        "total_species": 5,
+        "majority_value": "Ascaridida",
+        "confidence": 0.6,
+        "variants": {
+          "Rhabditida": 2,
+          "Ascaridida": 3
+        }
+      },
+      "family": {
+        "total_species": 5,
+        "majority_value": "Toxocaridae",
+        "confidence": 0.6,
+        "variants": {
+          "Ascarididae": 2,
+          "Toxocaridae": 3
+        }
+      }
+    },
+    "goezia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Anisakidae",
+        "confidence": 0.5,
+        "variants": {
+          "Anisakidae": 2,
+          "Raphidascarididae": 2
+        }
+      }
+    },
+    "hysterothylacium": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Raphidascarididae",
+        "confidence": 0.75,
+        "variants": {
+          "Anisakidae": 4,
+          "Raphidascarididae": 12
+        }
+      }
+    },
+    "arthurdendyus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Geoplanidae",
+        "confidence": 0.75,
+        "variants": {
+          "Rhynchodemidae": 1,
+          "Geoplanidae": 3
+        }
+      }
+    },
+    "caenoplana": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Rhynchodemidae",
+        "confidence": 0.75,
+        "variants": {
+          "Rhynchodemidae": 3,
+          "Geoplanidae": 1
+        }
+      }
+    },
+    "anobium": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ptinidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Ptinidae": 8,
+          "Anobiidae": 1
+        }
+      }
+    },
+    "caenocara": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 2
+        }
+      }
+    },
+    "dorcatoma": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Ptinidae",
+        "confidence": 0.7647058823529411,
+        "variants": {
+          "Ptinidae": 13,
+          "Anobiidae": 4
+        }
+      }
+    },
+    "dryophilus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Anobiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 6
+        }
+      }
+    },
+    "episernus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5454545454545454,
+        "variants": {
+          "Ptinidae": 6,
+          "Anobiidae": 5
+        }
+      }
+    },
+    "ernobius": {
+      "family": {
+        "total_species": 32,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 16,
+          "Anobiidae": 16
+        }
+      }
+    },
+    "gastrallus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Ptinidae": 5,
+          "Anobiidae": 4
+        }
+      }
+    },
+    "gibbium": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 1,
+          "Anobiidae": 1
+        }
+      }
+    },
+    "hadrobregmus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Ptinidae",
+        "confidence": 0.6,
+        "variants": {
+          "Ptinidae": 3,
+          "Anobiidae": 2
+        }
+      }
+    },
+    "hemicoelus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Ptinidae",
+        "confidence": 0.8,
+        "variants": {
+          "Ptinidae": 4,
+          "Anobiidae": 1
+        }
+      }
+    },
+    "lasioderma": {
+      "family": {
+        "total_species": 29,
+        "majority_value": "Anobiidae",
+        "confidence": 0.8620689655172413,
+        "variants": {
+          "Ptinidae": 4,
+          "Anobiidae": 25
+        }
+      }
+    },
+    "mesocoelopus": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Anobiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 4
+        }
+      }
+    },
+    "mesothes": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 1,
+          "Anobiidae": 1
+        }
+      }
+    },
+    "metholcus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Anobiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ptinidae": 1,
+          "Anobiidae": 2
+        }
+      }
+    },
+    "mezium": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Anobiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Ptinidae": 1,
+          "Anobiidae": 4
+        }
+      }
+    },
+    "nicobium": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Anobiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ptinidae": 1,
+          "Anobiidae": 2
+        }
+      }
+    },
+    "ochina": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 3,
+          "Anobiidae": 3
+        }
+      }
+    },
+    "oligomerus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 2
+        }
+      }
+    },
+    "ptilinus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Anobiidae",
+        "confidence": 0.6,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 3
+        }
+      }
+    },
+    "ptinomorphus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Anobiidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Ptinidae": 2,
+          "Anobiidae": 7
+        }
+      }
+    },
+    "ptinus": {
+      "family": {
+        "total_species": 71,
+        "majority_value": "Anobiidae",
+        "confidence": 0.7887323943661971,
+        "variants": {
+          "Ptinidae": 15,
+          "Anobiidae": 56
+        }
+      }
+    },
+    "stagetus": {
+      "family": {
+        "total_species": 20,
+        "majority_value": "Anobiidae",
+        "confidence": 0.7,
+        "variants": {
+          "Ptinidae": 6,
+          "Anobiidae": 14
+        }
+      }
+    },
+    "xestobium": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Ptinidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Ptinidae": 5,
+          "Anobiidae": 4
+        }
+      }
+    },
+    "xyletinus": {
+      "family": {
+        "total_species": 35,
+        "majority_value": "Anobiidae",
+        "confidence": 0.7428571428571429,
+        "variants": {
+          "Ptinidae": 9,
+          "Anobiidae": 26
+        }
+      }
+    },
+    "turrisipho": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Buccinidae",
+        "confidence": 0.6,
+        "variants": {
+          "Buccinidae": 3,
+          "Colidae": 2
+        }
+      }
+    },
+    "bursaphelenchus": {
+      "class": {
+        "total_species": 35,
+        "majority_value": "Secernentea",
+        "confidence": 0.6571428571428571,
+        "variants": {
+          "Chromadorea": 12,
+          "Secernentea": 23
+        }
+      },
+      "family": {
+        "total_species": 35,
+        "majority_value": "Parasitaphelenchidae",
+        "confidence": 0.6571428571428571,
+        "variants": {
+          "Aphelenchoididae": 12,
+          "Parasitaphelenchidae": 23
+        }
+      }
+    },
+    "cheiroseius": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Ascidae",
+        "confidence": 0.8125,
+        "variants": {
+          "Ascidae": 13,
+          "Blattisociidae": 2,
+          "Sejidae": 1
+        }
+      }
+    },
+    "lasioseius": {
+      "family": {
+        "total_species": 24,
+        "majority_value": "Ascidae",
+        "confidence": 0.9583333333333334,
+        "variants": {
+          "Ascidae": 23,
+          "Blattisociidae": 1
+        }
+      }
+    },
+    "platyseius": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Ascidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ascidae": 2,
+          "Blattisociidae": 1
+        }
+      }
+    },
+    "proctolaelaps": {
+      "family": {
+        "total_species": 24,
+        "majority_value": "Ascidae",
+        "confidence": 0.875,
+        "variants": {
+          "Ascidae": 21,
+          "Melicharidae": 3
+        }
+      }
+    },
+    "zercoseius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ascidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ascidae": 1,
+          "Blattisociidae": 1
+        }
+      }
+    },
+    "heleodromia": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Empididae",
+        "confidence": 0.75,
+        "variants": {
+          "Empididae": 6,
+          "Brachystomatidae": 2
+        }
+      }
+    },
+    "iteaphila": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Iteaphila-group",
+        "confidence": 0.6,
+        "variants": {
+          "Empididae": 2,
+          "Iteaphila-group": 3
+        }
+      }
+    },
+    "anthocomus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Malachiidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Melyridae": 5,
+          "Malachiidae": 7
+        }
+      }
+    },
+    "attalus": {
+      "family": {
+        "total_species": 93,
+        "majority_value": "Malachiidae",
+        "confidence": 0.967741935483871,
+        "variants": {
+          "Melyridae": 3,
+          "Malachiidae": 90
+        }
+      }
+    },
+    "axinotarsus": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Malachiidae",
+        "confidence": 0.7857142857142857,
+        "variants": {
+          "Melyridae": 3,
+          "Malachiidae": 11
+        }
+      }
+    },
+    "brachemys": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Malachiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 4
+        }
+      }
+    },
+    "cerapheles": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Malachiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 3
+        }
+      }
+    },
+    "charopus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Malachiidae",
+        "confidence": 0.7272727272727273,
+        "variants": {
+          "Melyridae": 3,
+          "Malachiidae": 8
+        }
+      }
+    },
+    "clanoptilus": {
+      "family": {
+        "total_species": 28,
+        "majority_value": "Malachiidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Melyridae": 8,
+          "Malachiidae": 20
+        }
+      }
+    },
+    "colotes": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Malachiidae",
+        "confidence": 0.9230769230769231,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 12
+        }
+      }
+    },
+    "cordylepherus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Malachiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 4
+        }
+      }
+    },
+    "cyrtosus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Malachiidae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 10
+        }
+      }
+    },
+    "ebaeus": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Malachiidae",
+        "confidence": 0.7307692307692307,
+        "variants": {
+          "Melyridae": 7,
+          "Malachiidae": 19
+        }
+      }
+    },
+    "hypebaeus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Malachiidae",
+        "confidence": 0.9166666666666666,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 11
+        }
+      }
+    },
+    "malachius": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Malachiidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Melyridae": 4,
+          "Malachiidae": 14
+        }
+      }
+    },
+    "nepachys": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Melyridae",
+        "confidence": 0.5,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 1
+        }
+      }
+    },
+    "paratinus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Malachiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 2
+        }
+      }
+    },
+    "sphinginus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Melyridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Melyridae": 2,
+          "Malachiidae": 1
+        }
+      }
+    },
+    "troglops": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Malachiidae",
+        "confidence": 0.9375,
+        "variants": {
+          "Melyridae": 1,
+          "Malachiidae": 15
+        }
+      }
+    },
+    "sapromyza": {
+      "family": {
+        "total_species": 49,
+        "majority_value": "Lauxaniidae",
+        "confidence": 0.9795918367346939,
+        "variants": {
+          "Sciomyzidae": 1,
+          "Lauxaniidae": 48
+        }
+      }
+    },
+    "cryphoeca": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Hahniidae",
+        "confidence": 0.75,
+        "variants": {
+          "Hahniidae": 6,
+          "Cybaeidae": 2
+        }
+      }
+    },
+    "vejdovskybathynella": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Bathynellidae",
+        "confidence": 0.6,
+        "variants": {
+          "Bathynellidae": 3,
+          "Parabathynellidae": 2
+        }
+      }
+    },
+    "axia": {
+      "phylum": {
+        "total_species": 5,
+        "majority_value": "Arthropoda",
+        "confidence": 0.8,
+        "variants": {
+          "Platyhelminthes": 1,
+          "Arthropoda": 4
+        }
+      },
+      "class": {
+        "total_species": 5,
+        "majority_value": "Insecta",
+        "confidence": 0.8,
+        "variants": {
+          "Rhabditophora": 1,
+          "Insecta": 4
+        }
+      },
+      "order": {
+        "total_species": 5,
+        "majority_value": "Lepidoptera",
+        "confidence": 0.8,
+        "variants": {
+          "Macrostomida": 1,
+          "Lepidoptera": 4
+        }
+      },
+      "family": {
+        "total_species": 5,
+        "majority_value": "Cimeliidae",
+        "confidence": 0.8,
+        "variants": {
+          "Macrostomidae": 1,
+          "Cimeliidae": 4
+        }
+      }
+    },
+    "epiphanes": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Epiphanidae",
+        "confidence": 0.8,
+        "variants": {
+          "Brachionidae": 1,
+          "Epiphanidae": 4
+        }
+      }
+    },
+    "pelomyiella": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Canacidae",
+        "confidence": 0.5,
+        "variants": {
+          "Canacidae": 2,
+          "Tethinidae": 2
+        }
+      }
+    },
+    "tethina": {
+      "family": {
+        "total_species": 29,
+        "majority_value": "Tethinidae",
+        "confidence": 0.8620689655172413,
+        "variants": {
+          "Canacidae": 4,
+          "Tethinidae": 25
+        }
+      }
+    },
+    "faerlea": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Mecynostomidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Isodiametridae": 1,
+          "Mecynostomidae": 2
+        }
+      }
+    },
+    "auletobius": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Attelabidae",
+        "confidence": 0.7272727272727273,
+        "variants": {
+          "Attelabidae": 8,
+          "Rhynchitidae": 3
+        }
+      }
+    },
+    "lasiorhynchites": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Attelabidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Attelabidae": 5,
+          "Rhynchitidae": 4
+        }
+      }
+    },
+    "neocoenorrhinus": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Rhynchitidae",
+        "confidence": 0.625,
+        "variants": {
+          "Attelabidae": 3,
+          "Rhynchitidae": 5
+        }
+      }
+    },
+    "rhynchites": {
+      "family": {
+        "total_species": 13,
+        "majority_value": "Rhynchitidae",
+        "confidence": 0.6923076923076923,
+        "variants": {
+          "Attelabidae": 4,
+          "Rhynchitidae": 9
+        }
+      }
+    },
+    "spirorbis": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Serpulidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Serpulidae": 4,
+          "Spirorbidae": 3
+        }
+      }
+    },
+    "caberea": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Candidae",
+        "confidence": 0.5,
+        "variants": {
+          "Candidae": 1,
+          "Scrupocellariidae": 1
+        }
+      }
+    },
+    "caryophyllaeus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Caryophyllaeidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Caryophyllaeidae": 6,
+          "Lytocestidae": 1
+        }
+      }
+    },
+    "strongylosoma": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Paradoxosomatidae",
+        "confidence": 0.8,
+        "variants": {
+          "Polydesmidae": 1,
+          "Paradoxosomatidae": 4
+        }
+      }
+    },
+    "micronecta": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Corixidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Corixidae": 8,
+          "Micronectidae": 1
+        }
+      }
+    },
+    "ciliata": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Gadidae",
+        "confidence": 0.5,
+        "variants": {
+          "Gadidae": 1,
+          "Lotidae": 1
+        }
+      }
+    },
+    "escharella": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Escharellidae",
+        "confidence": 0.875,
+        "variants": {
+          "Romancheinidae": 2,
+          "Escharellidae": 14
+        }
+      }
+    },
+    "cottus": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Cottidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Cottidae": 12,
+          "Cottoidei": 2
+        }
+      }
+    },
+    "krombeinella": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Mutillidae",
+        "confidence": 0.7,
+        "variants": {
+          "Mutillidae": 7,
+          "Myrmosidae": 3
+        }
+      }
+    },
+    "myrmosa": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Mutillidae",
+        "confidence": 0.5,
+        "variants": {
+          "Mutillidae": 1,
+          "Myrmosidae": 1
+        }
+      }
+    },
+    "paramyrmosa": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Mutillidae",
+        "confidence": 0.5,
+        "variants": {
+          "Mutillidae": 1,
+          "Myrmosidae": 1
+        }
+      }
+    },
+    "spirocerca": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Chromadorea",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Secernentea": 1,
+          "Chromadorea": 2
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Thelaziidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Spirocercidae": 1,
+          "Thelaziidae": 2
+        }
+      }
+    },
+    "cooperia": {
+      "order": {
+        "total_species": 8,
+        "majority_value": "Strongylida",
+        "confidence": 0.875,
+        "variants": {
+          "Strongylida": 7,
+          "Rhabditida": 1
+        }
+      },
+      "family": {
+        "total_species": 8,
+        "majority_value": "Trichostrongylidae",
+        "confidence": 0.875,
+        "variants": {
+          "Trichostrongylidae": 7,
+          "Cooperiidae": 1
+        }
+      }
+    },
+    "conopeum": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Electridae",
+        "confidence": 0.5,
+        "variants": {
+          "Electridae": 1,
+          "Membraniporidae": 1
+        }
+      }
+    },
+    "stegophiura": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ophiopyrgidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ophiopyrgidae": 1,
+          "Ophiuridae": 1
+        }
+      }
+    },
+    "opisthioglyphe": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Plagiorchiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Plagiorchiidae": 4,
+          "Telorchiidae": 2
+        }
+      }
+    },
+    "troglotrema": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Plagiorchiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Plagiorchiidae": 1,
+          "Troglotrematidae": 1
+        }
+      }
+    },
+    "astrangia": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Astrangiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Astrangiidae": 1,
+          "Rhizangiidae": 1
+        }
+      }
+    },
+    "torrenticola": {
+      "family": {
+        "total_species": 63,
+        "majority_value": "Torrenticolidae",
+        "confidence": 0.9841269841269841,
+        "variants": {
+          "Hygrobatidae": 1,
+          "Torrenticolidae": 62
+        }
+      }
+    },
+    "phakellia": {
+      "order": {
+        "total_species": 3,
+        "majority_value": "Bubarida",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Bubarida": 2,
+          "Axinellida": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Bubaridae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Bubaridae": 2,
+          "Axinellidae": 1
+        }
+      }
+    },
+    "johnstonia": {
+      "phylum": {
+        "total_species": 2,
+        "majority_value": "Annelida",
+        "confidence": 0.5,
+        "variants": {
+          "Annelida": 1,
+          "Nematoda": 1
+        }
+      },
+      "class": {
+        "total_species": 2,
+        "majority_value": "Polychaeta",
+        "confidence": 0.5,
+        "variants": {
+          "Polychaeta": 1,
+          "Secernentea": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Maldanidae",
+        "confidence": 0.5,
+        "variants": {
+          "Maldanidae": 1,
+          "Thelastomatidae": 1
+        }
+      }
+    },
+    "hemicycliophora": {
+      "class": {
+        "total_species": 17,
+        "majority_value": "Secernentea",
+        "confidence": 0.8823529411764706,
+        "variants": {
+          "Chromadorea": 2,
+          "Secernentea": 15
+        }
+      },
+      "family": {
+        "total_species": 17,
+        "majority_value": "Hemicycliophoridae",
+        "confidence": 0.8823529411764706,
+        "variants": {
+          "Criconematidae": 2,
+          "Hemicycliophoridae": 15
+        }
+      }
+    },
+    "banksinoma": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Banksinomidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Thyrisomidae": 1,
+          "Banksinomidae": 2
+        }
+      }
+    },
+    "oribella": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Banksinomidae",
+        "confidence": 0.9285714285714286,
+        "variants": {
+          "Thyrisomidae": 1,
+          "Banksinomidae": 13
+        }
+      }
+    },
+    "oxynoemacheilus": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Cypriniformes",
+        "confidence": 0.75,
+        "variants": {
+          "Cypriniformes": 3,
+          "Clupeiformes": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Nemacheilidae",
+        "confidence": 0.75,
+        "variants": {
+          "Nemacheilidae": 3,
+          "Balitoridae": 1
+        }
+      }
+    },
+    "basilia": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Nycteribiidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Nycteribiidae": 5,
+          "Hippoboscidae": 1
+        }
+      }
+    },
+    "nycteribia": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Nycteribiidae",
+        "confidence": 0.6,
+        "variants": {
+          "Nycteribiidae": 3,
+          "Hippoboscidae": 2
+        }
+      }
+    },
+    "muriceides": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Plexauridae",
+        "confidence": 0.5,
+        "variants": {
+          "Plexauridae": 1,
+          "Paramuriceidae": 1
+        }
+      }
+    },
+    "swiftia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Plexauridae",
+        "confidence": 0.5,
+        "variants": {
+          "Plexauridae": 2,
+          "Paramuriceidae": 2
+        }
+      }
+    },
+    "hormiphora": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Nuda",
+        "confidence": 0.5,
+        "variants": {
+          "Nuda": 1,
+          "Tentaculata": 1
+        }
+      },
+      "order": {
+        "total_species": 2,
+        "majority_value": "Beroida",
+        "confidence": 0.5,
+        "variants": {
+          "Beroida": 1,
+          "Cydippida": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Beroidae",
+        "confidence": 0.5,
+        "variants": {
+          "Beroidae": 1,
+          "Pleurobrachiidae": 1
+        }
+      }
+    },
+    "berthella": {
+      "order": {
+        "total_species": 8,
+        "majority_value": "Pleurobranchomorpha",
+        "confidence": 0.875,
+        "variants": {
+          "Pleurobranchomorpha": 7,
+          "Pleurobranchida": 1
+        }
+      }
+    },
+    "berthellina": {
+      "order": {
+        "total_species": 2,
+        "majority_value": "Pleurobranchomorpha",
+        "confidence": 0.5,
+        "variants": {
+          "Pleurobranchomorpha": 1,
+          "Pleurobranchida": 1
+        }
+      }
+    },
+    "pleurobranchus": {
+      "order": {
+        "total_species": 6,
+        "majority_value": "Pleurobranchomorpha",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Pleurobranchomorpha": 4,
+          "Pleurobranchida": 2
+        }
+      }
+    },
+    "pachycordyle": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Bougainvilliidae",
+        "confidence": 0.5,
+        "variants": {
+          "Bougainvilliidae": 1,
+          "Clavidae": 1
+        }
+      }
+    },
+    "bovicola": {
+      "order": {
+        "total_species": 9,
+        "majority_value": "Phthiraptera",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Phthiraptera": 8,
+          "Psocodea": 1
+        }
+      },
+      "family": {
+        "total_species": 9,
+        "majority_value": "Bovicoliidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Bovicoliidae": 8,
+          "Trichodectidae": 1
+        }
+      }
+    },
+    "blanus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Blanidae",
+        "confidence": 0.5,
+        "variants": {
+          "Blanidae": 1,
+          "Amphisbaenidae": 1
+        }
+      }
+    },
+    "capraiellus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ectobiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ectobiidae": 1,
+          "Blattellidae": 1
+        }
+      }
+    },
+    "ectobius": {
+      "family": {
+        "total_species": 36,
+        "majority_value": "Blattellidae",
+        "confidence": 0.7222222222222222,
+        "variants": {
+          "Ectobiidae": 10,
+          "Blattellidae": 26
+        }
+      }
+    },
+    "loboptera": {
+      "family": {
+        "total_species": 19,
+        "majority_value": "Blattellidae",
+        "confidence": 0.9473684210526315,
+        "variants": {
+          "Ectobiidae": 1,
+          "Blattellidae": 18
+        }
+      }
+    },
+    "phyllodromica": {
+      "family": {
+        "total_species": 74,
+        "majority_value": "Blattellidae",
+        "confidence": 0.9054054054054054,
+        "variants": {
+          "Ectobiidae": 7,
+          "Blattellidae": 67
+        }
+      }
+    },
+    "catriona": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Trinchesiidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Cuthonidae": 1,
+          "Trinchesiidae": 2
+        }
+      }
+    },
+    "chrysolampus": {
+      "family": {
+        "total_species": 30,
+        "majority_value": "Perilampidae",
+        "confidence": 0.9,
+        "variants": {
+          "Perilampidae": 27,
+          "Chrysolampidae": 3
+        }
+      }
+    },
+    "pleurotrocha": {
+      "family": {
+        "total_species": 10,
+        "majority_value": "Notommatidae",
+        "confidence": 0.9,
+        "variants": {
+          "Proalidae": 1,
+          "Notommatidae": 9
+        }
+      }
+    },
+    "libelloides": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Ascalaphidae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Ascalaphidae": 10,
+          "Myrmeleontidae": 1
+        }
+      }
+    },
+    "bythocaris": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Bythocarididae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Bythocarididae": 5,
+          "Hippolytidae": 1
+        }
+      }
+    },
+    "eualus": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Hippolytidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Hippolytidae": 4,
+          "Thoridae": 3
+        }
+      }
+    },
+    "lebbeus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Hippolytidae",
+        "confidence": 0.5,
+        "variants": {
+          "Hippolytidae": 1,
+          "Thoridae": 1
+        }
+      }
+    },
+    "lysmata": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Lysmatidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Hippolytidae": 2,
+          "Lysmatidae": 5
+        }
+      }
+    },
+    "bythotrephes": {
+      "order": {
+        "total_species": 2,
+        "majority_value": "Diplostraca",
+        "confidence": 0.5,
+        "variants": {
+          "Diplostraca": 1,
+          "Onychopoda": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Cercopagidae",
+        "confidence": 0.5,
+        "variants": {
+          "Cercopagidae": 1,
+          "Cercopagididae": 1
+        }
+      }
+    },
+    "siphonodentalium": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Gadilidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Gadilidae": 2,
+          "Pulsellidae": 1
+        }
+      }
+    },
+    "calcinus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Calcinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Calcinidae": 1,
+          "Diogenidae": 1
+        }
+      }
+    },
+    "callogorgia": {
+      "order": {
+        "total_species": 2,
+        "majority_value": "Alcyonacea",
+        "confidence": 0.5,
+        "variants": {
+          "Alcyonacea": 1,
+          "Scleralcyonacea": 1
+        }
+      }
+    },
+    "fenestrulina": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Fenestrulinidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Microporellidae": 1,
+          "Fenestrulinidae": 2
+        }
+      }
+    },
+    "siganus": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Perciformes",
+        "confidence": 0.75,
+        "variants": {
+          "Labriformes": 1,
+          "Perciformes": 3
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Siganidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scaridae": 1,
+          "Siganidae": 3
+        }
+      }
+    },
+    "camisia": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Crotoniidae",
+        "confidence": 0.6363636363636364,
+        "variants": {
+          "Crotoniidae": 7,
+          "Camisiidae": 4
+        }
+      }
+    },
+    "heminothrus": {
+      "family": {
+        "total_species": 11,
+        "majority_value": "Camisiidae",
+        "confidence": 0.6363636363636364,
+        "variants": {
+          "Crotoniidae": 4,
+          "Camisiidae": 7
+        }
+      }
+    },
+    "platynothrus": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Crotoniidae",
+        "confidence": 0.6,
+        "variants": {
+          "Crotoniidae": 3,
+          "Camisiidae": 2
+        }
+      }
+    },
+    "campichoeta": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Campichoetidae",
+        "confidence": 0.5,
+        "variants": {
+          "Campichoetidae": 3,
+          "Diastatidae": 3
+        }
+      }
+    },
+    "sebastes": {
+      "class": {
+        "total_species": 4,
+        "majority_value": "Actinopterygii",
+        "confidence": 0.75,
+        "variants": {
+          "Actinopterygii": 3,
+          "Actinopteri": 1
+        }
+      },
+      "order": {
+        "total_species": 4,
+        "majority_value": "Scorpaeniformes",
+        "confidence": 0.75,
+        "variants": {
+          "Scorpaeniformes": 3,
+          "Perciformes": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Scorpaenidae",
+        "confidence": 0.75,
+        "variants": {
+          "Scorpaenidae": 3,
+          "Sebastidae": 1
+        }
+      }
+    },
+    "trachyscorpia": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Actinopterygii",
+        "confidence": 0.5,
+        "variants": {
+          "Actinopterygii": 1,
+          "Actinopteri": 1
+        }
+      },
+      "order": {
+        "total_species": 2,
+        "majority_value": "Scorpaeniformes",
+        "confidence": 0.5,
+        "variants": {
+          "Scorpaeniformes": 1,
+          "Perciformes": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Scorpaenidae",
+        "confidence": 0.5,
+        "variants": {
+          "Scorpaenidae": 1,
+          "Sebastidae": 1
+        }
+      }
+    },
+    "setophaga": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Parulidae",
+        "confidence": 0.9166666666666666,
+        "variants": {
+          "Parulidae": 11,
+          "Muscicapidae": 1
+        }
+      }
+    },
+    "carinina": {
+      "order": {
+        "total_species": 10,
+        "majority_value": "Carinomiformes",
+        "confidence": 0.9,
+        "variants": {
+          "Carinomiformes": 9,
+          "Tubulaniformes": 1
+        }
+      },
+      "family": {
+        "total_species": 10,
+        "majority_value": "Carininidae",
+        "confidence": 0.9,
+        "variants": {
+          "Carininidae": 9,
+          "Tubulanidae": 1
+        }
+      }
+    },
+    "carychium": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Carychiidae",
+        "confidence": 0.625,
+        "variants": {
+          "Carychiidae": 5,
+          "Ellobiidae": 3
+        }
+      }
+    },
+    "zospeum": {
+      "family": {
+        "total_species": 24,
+        "majority_value": "Ellobiidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Carychiidae": 10,
+          "Ellobiidae": 14
+        }
+      }
+    },
+    "phrurolithus": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Phrurolithidae",
+        "confidence": 0.5555555555555556,
+        "variants": {
+          "Corinnidae": 4,
+          "Phrurolithidae": 5
+        }
+      }
+    },
+    "trachelas": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Corinnidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Corinnidae": 8,
+          "Trachelidae": 1
+        }
+      }
+    },
+    "sergia": {
+      "phylum": {
+        "total_species": 3,
+        "majority_value": "Arthropoda",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Platyhelminthes": 1,
+          "Arthropoda": 2
+        }
+      },
+      "class": {
+        "total_species": 3,
+        "majority_value": "Malacostraca",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Rhabdocoela": 1,
+          "Malacostraca": 2
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Sergestidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Dalyelliidae": 1,
+          "Sergestidae": 2
+        }
+      }
+    },
+    "clio": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Cavoliniidae",
+        "confidence": 0.5,
+        "variants": {
+          "Cavoliniidae": 1,
+          "Cliidae": 1
+        }
+      }
+    },
+    "cuvierina": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Cavoliniidae",
+        "confidence": 0.5,
+        "variants": {
+          "Cavoliniidae": 1,
+          "Cuvierinidae": 1
+        }
+      }
+    },
+    "cephalothrix": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Cephalotrichidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Cephalothricidae": 5,
+          "Cephalotrichidae": 7
+        }
+      }
+    },
+    "cepheus": {
+      "family": {
+        "total_species": 21,
+        "majority_value": "Cepheidae",
+        "confidence": 0.9047619047619048,
+        "variants": {
+          "Cepheidae": 19,
+          "Compactozetidae": 2
+        }
+      }
+    },
+    "tritegeus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Cepheidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Cepheidae": 2,
+          "Compactozetidae": 1
+        }
+      }
+    },
+    "ceratoppia": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Metrioppiidae",
+        "confidence": 0.5714285714285714,
+        "variants": {
+          "Metrioppiidae": 4,
+          "Peloppiidae": 3
+        }
+      }
+    },
+    "ceratozetes": {
+      "family": {
+        "total_species": 34,
+        "majority_value": "Ceratozetidae",
+        "confidence": 0.9705882352941176,
+        "variants": {
+          "Ceratozetidae": 33,
+          "Cosmochthoniidae": 1
+        }
+      }
+    },
+    "trichoribates": {
+      "family": {
+        "total_species": 26,
+        "majority_value": "Ceratozetidae",
+        "confidence": 0.8846153846153846,
+        "variants": {
+          "Ceratozetidae": 23,
+          "Ctenobelbidae": 1,
+          "Parhypochthoniidae": 2
+        }
+      }
+    },
+    "zetomimus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Ceratozetidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ceratozetidae": 2,
+          "Zetomimidae": 2
+        }
+      }
+    },
+    "cheiracanthium": {
+      "family": {
+        "total_species": 32,
+        "majority_value": "Miturgidae",
+        "confidence": 0.625,
+        "variants": {
+          "Cheiracanthiidae": 12,
+          "Miturgidae": 20
+        }
+      }
+    },
+    "zora": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Miturgidae",
+        "confidence": 0.5833333333333334,
+        "variants": {
+          "Miturgidae": 7,
+          "Zoridae": 5
+        }
+      }
+    },
+    "childia": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Childiidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Childiidae": 6,
+          "Mecynostomidae": 1
+        }
+      }
+    },
+    "philactinoposthia": {
+      "phylum": {
+        "total_species": 10,
+        "majority_value": "Xenacoelomorpha",
+        "confidence": 0.8,
+        "variants": {
+          "Platyhelminthes": 2,
+          "Xenacoelomorpha": 8
+        }
+      },
+      "class": {
+        "total_species": 10,
+        "majority_value": "Acoela",
+        "confidence": 0.8,
+        "variants": {
+          "Turbellaria": 2,
+          "Acoela": 8
+        }
+      },
+      "family": {
+        "total_species": 10,
+        "majority_value": "Dakuidae",
+        "confidence": 0.8,
+        "variants": {
+          "Childiidae": 2,
+          "Dakuidae": 8
+        }
+      }
+    },
+    "merluccius": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Merlucciidae",
+        "confidence": 0.8,
+        "variants": {
+          "Lotidae": 1,
+          "Merlucciidae": 4
+        }
+      }
+    },
+    "urodiaspis": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Urodinychidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Uropodidae": 1,
+          "Urodinychidae": 5
+        }
+      }
+    },
+    "cladocora": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Faviidae",
+        "confidence": 0.5,
+        "variants": {
+          "Faviidae": 1,
+          "Cladocoridae": 1
+        }
+      }
+    },
+    "pholoe": {
+      "family": {
+        "total_species": 7,
+        "majority_value": "Pholoidae",
+        "confidence": 0.7142857142857143,
+        "variants": {
+          "Sigalionidae": 2,
+          "Pholoidae": 5
+        }
+      }
+    },
+    "mononchus": {
+      "class": {
+        "total_species": 11,
+        "majority_value": "Adenophorea",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Adenophorea": 10,
+          "Enoplea": 1
+        }
+      }
+    },
+    "mylonchulus": {
+      "family": {
+        "total_species": 32,
+        "majority_value": "Mylonchulidae",
+        "confidence": 0.96875,
+        "variants": {
+          "Mononchidae": 1,
+          "Mylonchulidae": 31
+        }
+      }
+    },
+    "cochlostoma": {
+      "order": {
+        "total_species": 34,
+        "majority_value": "Architaenioglossa",
+        "confidence": 0.9705882352941176,
+        "variants": {
+          "Architaenioglossa": 33,
+          "Littorinimorpha": 1
+        }
+      },
+      "family": {
+        "total_species": 66,
+        "majority_value": "Megalomastomatidae",
+        "confidence": 0.5,
+        "variants": {
+          "Megalomastomatidae": 33,
+          "Cochlostomatidae": 32,
+          "Pomatiidae": 1
+        }
+      }
+    },
+    "leptognathia": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Leptognathiidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Colletteidae": 2,
+          "Leptognathiidae": 7
+        }
+      }
+    },
+    "truncatellina": {
+      "family": {
+        "total_species": 16,
+        "majority_value": "Vertiginidae",
+        "confidence": 0.6875,
+        "variants": {
+          "Vertiginidae": 11,
+          "Truncatellinidae": 5
+        }
+      }
+    },
+    "coptosoma": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Plataspididae",
+        "confidence": 0.75,
+        "variants": {
+          "Plataspididae": 3,
+          "Plataspidae": 1
+        }
+      }
+    },
+    "ummidia": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Halonoproctidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Ctenizidae": 1,
+          "Halonoproctidae": 2
+        }
+      }
+    },
+    "cupiennius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Ctenidae",
+        "confidence": 0.5,
+        "variants": {
+          "Ctenidae": 1,
+          "Trechaleidae": 1
+        }
+      }
+    },
+    "cylichnium": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Scaphandridae",
+        "confidence": 0.5,
+        "variants": {
+          "Scaphandridae": 1,
+          "[unassigned] Cephalaspidea": 1
+        }
+      }
+    },
+    "roxania": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Alacuppidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Scaphandridae": 1,
+          "Alacuppidae": 2
+        }
+      }
+    },
+    "dorypetalum": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Dorypetalidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Dorypetalidae": 5,
+          "Dorypethalidae": 1
+        }
+      }
+    },
+    "paragordius": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Chordodidae",
+        "confidence": 0.5,
+        "variants": {
+          "Chordodidae": 1,
+          "Gordiidae": 1
+        }
+      }
+    },
+    "deladenus": {
+      "class": {
+        "total_species": 10,
+        "majority_value": "Secernentea",
+        "confidence": 0.9,
+        "variants": {
+          "Secernentea": 9,
+          "Chromadorea": 1
+        }
+      },
+      "family": {
+        "total_species": 10,
+        "majority_value": "Neotylenchidae",
+        "confidence": 0.9,
+        "variants": {
+          "Neotylenchidae": 9,
+          "Sphaerulariidae": 1
+        }
+      }
+    },
+    "haliclystus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Haliclystidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Haliclystidae": 2,
+          "Lucernariidae": 1
+        }
+      }
+    },
+    "heligmosomoides": {
+      "class": {
+        "total_species": 10,
+        "majority_value": "Secernentea",
+        "confidence": 0.7,
+        "variants": {
+          "Secernentea": 7,
+          "Chromadorea": 3
+        }
+      },
+      "family": {
+        "total_species": 10,
+        "majority_value": "Heligmosomidae",
+        "confidence": 0.7,
+        "variants": {
+          "Heligmosomidae": 7,
+          "Heligosomidae": 3
+        }
+      }
+    },
+    "sciarosoma": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Diadocidiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Diadocidiidae": 1,
+          "Sciaroidea_incertae_sedis": 1
+        }
+      }
+    },
+    "discus": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Patulidae",
+        "confidence": 0.75,
+        "variants": {
+          "Patulidae": 9,
+          "Discidae": 3
+        }
+      }
+    },
+    "hemileius": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Oribatulidae",
+        "confidence": 0.75,
+        "variants": {
+          "Oribatulidae": 9,
+          "Scheloribatidae": 3
+        }
+      }
+    },
+    "liebstadia": {
+      "family": {
+        "total_species": 9,
+        "majority_value": "Protoribatidae",
+        "confidence": 0.7777777777777778,
+        "variants": {
+          "Oribatulidae": 2,
+          "Protoribatidae": 7
+        }
+      }
+    },
+    "oribatula": {
+      "family": {
+        "total_species": 45,
+        "majority_value": "Oribatulidae",
+        "confidence": 0.9333333333333333,
+        "variants": {
+          "Oribatulidae": 42,
+          "Trhypochthoniidae": 1,
+          "Parhypochthoniidae": 2
+        }
+      }
+    },
+    "psammechinus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Echinidae",
+        "confidence": 0.5,
+        "variants": {
+          "Echinidae": 1,
+          "Parechinidae": 1
+        }
+      }
+    },
+    "paramphithoe": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Epimeriidae",
+        "confidence": 0.5,
+        "variants": {
+          "Epimeriidae": 1,
+          "Paramphithoidae": 1
+        }
+      }
+    },
+    "pusia": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Mitridae",
+        "confidence": 0.5,
+        "variants": {
+          "Mitridae": 1,
+          "Costellariidae": 1
+        }
+      }
+    },
+    "scutovertex": {
+      "family": {
+        "total_species": 18,
+        "majority_value": "Scutoverticidae",
+        "confidence": 0.9444444444444444,
+        "variants": {
+          "Eremaeidae": 1,
+          "Scutoverticidae": 17
+        }
+      }
+    },
+    "erithacus": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Muscicapidae",
+        "confidence": 0.5,
+        "variants": {
+          "Muscicapidae": 1,
+          "Saxicolidae": 1
+        }
+      }
+    },
+    "luscinia": {
+      "family": {
+        "total_species": 5,
+        "majority_value": "Muscicapidae",
+        "confidence": 0.6,
+        "variants": {
+          "Muscicapidae": 3,
+          "Saxicolidae": 2
+        }
+      }
+    },
+    "oenanthe": {
+      "family": {
+        "total_species": 12,
+        "majority_value": "Saxicolidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Muscicapidae": 4,
+          "Saxicolidae": 8
+        }
+      }
+    },
+    "phoenicurus": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Muscicapidae",
+        "confidence": 0.5,
+        "variants": {
+          "Muscicapidae": 2,
+          "Saxicolidae": 2
+        }
+      }
+    },
+    "saxicola": {
+      "family": {
+        "total_species": 6,
+        "majority_value": "Muscicapidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Muscicapidae": 4,
+          "Saxicolidae": 2
+        }
+      }
+    },
+    "subeucalanus": {
+      "class": {
+        "total_species": 6,
+        "majority_value": "Copepoda",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Hexanauplia": 1,
+          "Copepoda": 5
+        }
+      },
+      "family": {
+        "total_species": 6,
+        "majority_value": "Subeucalanidae",
+        "confidence": 0.8333333333333334,
+        "variants": {
+          "Eucalanidae": 1,
+          "Subeucalanidae": 5
+        }
+      }
+    },
+    "longipedia": {
+      "class": {
+        "total_species": 9,
+        "majority_value": "Copepoda",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Arachnida": 1,
+          "Copepoda": 8
+        }
+      },
+      "order": {
+        "total_species": 9,
+        "majority_value": "Polyarthra",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Astigmata": 1,
+          "Polyarthra": 8
+        }
+      },
+      "family": {
+        "total_species": 9,
+        "majority_value": "Longipediidae",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Syringobiidae": 1,
+          "Longipediidae": 8
+        }
+      }
+    },
+    "exidmonea": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Cyclostomata",
+        "confidence": 0.5,
+        "variants": {
+          "Cyclostomata": 2,
+          "Cyclostomatida": 2
+        }
+      }
+    },
+    "tubulipora": {
+      "order": {
+        "total_species": 9,
+        "majority_value": "Cyclostomata",
+        "confidence": 0.8888888888888888,
+        "variants": {
+          "Cyclostomata": 8,
+          "Cyclostomatida": 1
+        }
+      }
+    },
+    "parafilaria": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Secernentea",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Secernentea": 2,
+          "Chromadorea": 1
+        }
+      },
+      "order": {
+        "total_species": 3,
+        "majority_value": "Spirurida",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Spirurida": 2,
+          "Strongylida": 1
+        }
+      },
+      "family": {
+        "total_species": 3,
+        "majority_value": "Filariidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Filariidae": 2,
+          "Filaroididae": 1
+        }
+      }
+    },
+    "filinia": {
+      "class": {
+        "total_species": 11,
+        "majority_value": "Eurotatoria",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Eurotatoria": 10,
+          "Monogononta": 1
+        }
+      },
+      "family": {
+        "total_species": 11,
+        "majority_value": "Trochosphaeridae",
+        "confidence": 0.9090909090909091,
+        "variants": {
+          "Trochosphaeridae": 10,
+          "Filiniidae": 1
+        }
+      }
+    },
+    "onchnesoma": {
+      "phylum": {
+        "total_species": 4,
+        "majority_value": "Sipuncula",
+        "confidence": 0.75,
+        "variants": {
+          "Sipuncula": 3,
+          "Annelida": 1
+        }
+      },
+      "class": {
+        "total_species": 4,
+        "majority_value": "Sipunculidea",
+        "confidence": 0.75,
+        "variants": {
+          "Sipunculidea": 3,
+          "Sipuncula": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Phascolionidae",
+        "confidence": 0.75,
+        "variants": {
+          "Golfingiidae": 1,
+          "Phascolionidae": 3
+        }
+      }
+    },
+    "phascolion": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Phascolionidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Golfingiidae": 1,
+          "Phascolionidae": 2
+        }
+      }
+    },
+    "iberobathynella": {
+      "order": {
+        "total_species": 17,
+        "majority_value": "Bathynellacea",
+        "confidence": 0.5882352941176471,
+        "variants": {
+          "Bathynellacea": 10,
+          "Decapoda": 7
+        }
+      },
+      "family": {
+        "total_species": 17,
+        "majority_value": "Parabathynellidae",
+        "confidence": 0.5882352941176471,
+        "variants": {
+          "Parabathynellidae": 10,
+          "Parathelphusidae": 7
+        }
+      }
+    },
+    "gylippus": {
+      "family": {
+        "total_species": 3,
+        "majority_value": "Gylippidae",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Gylippidae": 2,
+          "Glyppidae": 1
+        }
+      }
+    },
+    "protoribates": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Protoribatidae",
+        "confidence": 0.8823529411764706,
+        "variants": {
+          "Protoribatidae": 15,
+          "Haplozetidae": 2
+        }
+      }
+    },
+    "notocelis": {
+      "phylum": {
+        "total_species": 2,
+        "majority_value": "Platyhelminthes",
+        "confidence": 0.5,
+        "variants": {
+          "Platyhelminthes": 1,
+          "Xenacoelomorpha": 1
+        }
+      },
+      "class": {
+        "total_species": 2,
+        "majority_value": "Turbellaria",
+        "confidence": 0.5,
+        "variants": {
+          "Turbellaria": 1,
+          "Acoela": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Otocelididae",
+        "confidence": 0.5,
+        "variants": {
+          "Otocelididae": 1,
+          "Dakuidae": 1
+        }
+      }
+    },
+    "hemelytroblatta": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Polyphagidae",
+        "confidence": 0.5,
+        "variants": {
+          "Polyphagidae": 1,
+          "Corydiidae": 1
+        }
+      }
+    },
+    "hermannia": {
+      "family": {
+        "total_species": 17,
+        "majority_value": "Hermanniidae",
+        "confidence": 0.9411764705882353,
+        "variants": {
+          "Hermanniidae": 16,
+          "Hermanniellidae": 1
+        }
+      }
+    },
+    "mesoplodon": {
+      "order": {
+        "total_species": 5,
+        "majority_value": "Artiodactyla",
+        "confidence": 0.8,
+        "variants": {
+          "Artiodactyla": 4,
+          "Cetacea": 1
+        }
+      },
+      "family": {
+        "total_species": 5,
+        "majority_value": "Ziphiidae",
+        "confidence": 0.8,
+        "variants": {
+          "Ziphiidae": 4,
+          "Hyperoodontidae": 1
+        }
+      }
+    },
+    "meria": {
+      "family": {
+        "total_species": 8,
+        "majority_value": "Thynnidae",
+        "confidence": 0.625,
+        "variants": {
+          "Tiphiidae": 3,
+          "Thynnidae": 5
+        }
+      }
+    },
+    "poecilotiphia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Tiphiidae",
+        "confidence": 0.5,
+        "variants": {
+          "Tiphiidae": 2,
+          "Thynnidae": 2
+        }
+      }
+    },
+    "imogine": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Rhabditophora",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Polycladida": 1,
+          "Rhabditophora": 2
+        }
+      }
+    },
+    "ionescuellum": {
+      "class": {
+        "total_species": 8,
+        "majority_value": "Entognatha",
+        "confidence": 0.75,
+        "variants": {
+          "Protura": 2,
+          "Entognatha": 6
+        }
+      },
+      "order": {
+        "total_species": 8,
+        "majority_value": "Protura",
+        "confidence": 0.75,
+        "variants": {
+          "Acerentomata": 2,
+          "Protura": 6
+        }
+      },
+      "family": {
+        "total_species": 8,
+        "majority_value": "Hesperentomidae",
+        "confidence": 0.75,
+        "variants": {
+          "Protentomidae": 2,
+          "Hesperentomidae": 6
+        }
+      }
+    },
+    "trachytes": {
+      "family": {
+        "total_species": 25,
+        "majority_value": "Polyaspididae",
+        "confidence": 0.96,
+        "variants": {
+          "Polyaspididae": 24,
+          "Trachytidae": 1
+        }
+      }
+    },
+    "leptynia": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Heteronemiidae",
+        "confidence": 0.75,
+        "variants": {
+          "Diapheromeridae": 1,
+          "Heteronemiidae": 3
+        }
+      }
+    },
+    "xiphinema": {
+      "class": {
+        "total_species": 67,
+        "majority_value": "Adenophorea",
+        "confidence": 0.9104477611940298,
+        "variants": {
+          "Enoplea": 6,
+          "Adenophorea": 61
+        }
+      },
+      "family": {
+        "total_species": 67,
+        "majority_value": "Xiphinematidae",
+        "confidence": 0.9104477611940298,
+        "variants": {
+          "Longidoridae": 6,
+          "Xiphinematidae": 61
+        }
+      }
+    },
+    "pinctada": {
+      "class": {
+        "total_species": 2,
+        "majority_value": "Gastropoda",
+        "confidence": 0.5,
+        "variants": {
+          "Gastropoda": 1,
+          "Bivalvia": 1
+        }
+      },
+      "order": {
+        "total_species": 2,
+        "majority_value": "Trochida",
+        "confidence": 0.5,
+        "variants": {
+          "Trochida": 1,
+          "Unionida": 1
+        }
+      },
+      "family": {
+        "total_species": 2,
+        "majority_value": "Margaritidae",
+        "confidence": 0.5,
+        "variants": {
+          "Margaritidae": 1,
+          "Margaritiferidae": 1
+        }
+      }
+    },
+    "pseudoceros": {
+      "class": {
+        "total_species": 3,
+        "majority_value": "Polycladida",
+        "confidence": 0.6666666666666666,
+        "variants": {
+          "Polycladida": 2,
+          "Rhabditophora": 1
+        }
+      }
+    },
+    "paramunna": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Munnidae",
+        "confidence": 0.5,
+        "variants": {
+          "Munnidae": 1,
+          "Paramunnidae": 1
+        }
+      }
+    },
+    "perlamantis": {
+      "family": {
+        "total_species": 2,
+        "majority_value": "Amorphoscelididae",
+        "confidence": 0.5,
+        "variants": {
+          "Amorphoscelididae": 1,
+          "Amorphoscelidae": 1
+        }
+      }
+    },
+    "pterocles": {
+      "order": {
+        "total_species": 4,
+        "majority_value": "Charadriiformes",
+        "confidence": 0.75,
+        "variants": {
+          "Charadriiformes": 3,
+          "Pterocliformes": 1
+        }
+      },
+      "family": {
+        "total_species": 4,
+        "majority_value": "Pteroclididae",
+        "confidence": 0.75,
+        "variants": {
+          "Pteroclididae": 3,
+          "Pteroclidae": 1
+        }
+      }
+    },
+    "runcina": {
+      "order": {
+        "total_species": 14,
+        "majority_value": "Runcinida",
+        "confidence": 0.6428571428571429,
+        "variants": {
+          "Runcinida": 9,
+          "Runcinacea": 5
+        }
+      }
+    },
+    "sycon": {
+      "family": {
+        "total_species": 14,
+        "majority_value": "Syconidae",
+        "confidence": 0.8571428571428571,
+        "variants": {
+          "Syconidae": 12,
+          "Sycettidae": 2
+        }
+      }
+    },
+    "thremma": {
+      "family": {
+        "total_species": 4,
+        "majority_value": "Thremmatidae",
+        "confidence": 0.75,
+        "variants": {
+          "Thremmatidae": 3,
+          "Uenoidae": 1
+        }
+      }
+    }
+  }
+}
