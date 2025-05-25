@@ -1,7 +1,6 @@
 # Gap List Data Repository
 
-<img src="doc/IBOL_LOGO_TRANSPARENT.png" style="width: 200px;" alt="IBOL Europe Logo">
-<img src="doc/Logo BGE.png" style="width: 200px;" alt="BGE Logo">
+<img src="doc/IBOL_LOGO_TRANSPARENT.png" style="width: 200px; display: inline-block; margin-right: 20px;" alt="IBOL Europe Logo"> <img src="doc/Logo BGE.png" style="width: 200px; display: inline-block;" alt="BGE Logo">
 
 This repository contains species data files and an advanced data cleaning pipeline for processing taxonomic information and synonyms.
 
@@ -90,6 +89,14 @@ The pipeline generates:
 - **Comprehensive logs** with all modifications tracked
 - **Summary reports** with processing statistics and SMART efficiency metrics
 
+## Support
+
+- **Issues**: Report bugs and request features via [GitHub Issues](https://github.com/bge-barcoding/gaplist-data/issues)
+- **Documentation**: See the [Pipeline Documentation](data_cleaning_pipeline/README.md)
+- **BGE Consortium**: Visit [biodiversitygenomics.eu](https://biodiversitygenomics.eu) for project updates
+
 ---
 
-For detailed usage instructions, examples, and troubleshooting, see the [Pipeline Documentation](data_cleaning_pipeline/README.md).
+## Acknowledgments
+
+This work is supported by the Biodiversity Genomics Europe (BGE) consortium and contributes to the International Barcode of Life (IBOL) initiative. Biodiversity Genomics Europe (Grant no.101059492) is funded by Horizon Europe under the Biodiversity, Circular Economy and Environment call (REA.B.3); co-funded by the Swiss State Secretariat for Education, Research and Innovation (SERI) under contract numbers 22.00173 and 24.00054; and by the UK Research and Innovation (UKRI) under the Department for Business, Energy and Industrial Strategy’s Horizon Europe Guarantee Scheme.
