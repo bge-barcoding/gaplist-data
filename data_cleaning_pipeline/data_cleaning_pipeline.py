@@ -937,6 +937,105 @@ class SpeciesDataCleaner:
             print(f"Removed {skipped_count} entries from file2 (invalid species format)")
     
     
+    def remove_synonyms_that_are_valid_species(self):
+        """
+        Remove any synonyms in file1 that are also valid species (exist as valid names).
+        This prevents valid species from being listed as synonyms of other species.
+        """
+        print("Removing synonyms that are valid species...")
+        
+        # Create a set of all valid species names (lowercase) from both files
+        valid_species = set()
+        valid_species.update(self.file1_data.keys())
+        valid_species.update(self.file2_data.keys())
+        
+        synonyms_removed = 0
+        records_modified = 0
+        
+        # Check each valid name's synonyms
+        for valid_name_lower, (valid_name, synonyms) in self.file1_data.items():
+            original_synonym_count = len(synonyms)
+            
+            # Filter out synonyms that are valid species
+            filtered_synonyms = []
+            removed_synonyms = []
+            
+            for synonym in synonyms:
+                synonym_lower = synonym.lower()
+                
+                # If this synonym is also a valid species, remove it
+                if synonym_lower in valid_species:
+                    removed_synonyms.append(synonym)
+                    synonyms_removed += 1
+                else:
+                    filtered_synonyms.append(synonym)
+            
+            # Update the record if any synonyms were removed
+            if removed_synonyms:
+                self.file1_data[valid_name_lower] = (valid_name, filtered_synonyms)
+                records_modified += 1
+                
+                # Log the change
+                removed_list = ';'.join(removed_synonyms)
+                self.log_change('file1', 0, 
+                              f"{valid_name};{original_synonym_count}_synonyms", 
+                              f"{valid_name};{len(filtered_synonyms)}_synonyms", 
+                              f'removed_valid_species_synonyms:{removed_list}')
+        
+        print(f"Removed {synonyms_removed} synonyms that were valid species from {records_modified} records")
+    
+    def log_duplicate_synonyms(self):
+        """
+        Log when a synonym is used for more than one valid species.
+        This helps identify potential data quality issues.
+        """
+        print("Checking for duplicate synonyms across different valid species...")
+        
+        # Build a map: synonym_lower -> [(valid_name, valid_name_lower), ...]
+        synonym_usage = defaultdict(list)
+        
+        for valid_name_lower, (valid_name, synonyms) in self.file1_data.items():
+            for synonym in synonyms:
+                synonym_lower = synonym.lower()
+                synonym_usage[synonym_lower].append((valid_name, valid_name_lower))
+        
+        # Find synonyms used by multiple valid species
+        duplicate_synonyms_found = 0
+        total_conflicts = 0
+        
+        for synonym_lower, valid_species_list in synonym_usage.items():
+            if len(valid_species_list) > 1:
+                duplicate_synonyms_found += 1
+                
+                # Get the actual synonym name (use first occurrence for display)
+                actual_synonym = ""
+                for valid_name_lower, (valid_name, synonyms) in self.file1_data.items():
+                    for syn in synonyms:
+                        if syn.lower() == synonym_lower:
+                            actual_synonym = syn
+                            break
+                    if actual_synonym:
+                        break
+                
+                # Create list of valid species using this synonym
+                species_list = [valid_name for valid_name, _ in valid_species_list]
+                species_str = ';'.join(species_list)
+                
+                # Log this duplicate usage
+                self.log_change('duplicate_synonym_check', 0, 
+                              f"synonym:{actual_synonym}", 
+                              f"used_by:{species_str}", 
+                              f'duplicate_synonym_usage_count:{len(valid_species_list)}')
+                
+                total_conflicts += len(valid_species_list)
+                
+                print(f"  Synonym '{actual_synonym}' is used by {len(valid_species_list)} valid species: {species_list}")
+        
+        if duplicate_synonyms_found > 0:
+            print(f"Found {duplicate_synonyms_found} synonyms used by multiple valid species (total {total_conflicts} conflicts)")
+        else:
+            print("No duplicate synonym usage found")
+
     def write_cleaned_files(self):
         """Write cleaned data to output files"""
         print("Writing cleaned files...")
@@ -1053,7 +1152,16 @@ class SpeciesDataCleaner:
         self.fix_missing_match_file1(missing_in_file1)
         self.fix_missing_match_file2(missing_in_file2)
         
-        # Phase 6: Write outputs
+        # Phase 6: Remove synonyms that are valid species
+        print("\nPhase 6: Removing synonyms that are valid species...")
+        self.remove_synonyms_that_are_valid_species()
+        
+        # Phase 7: Check for duplicate synonyms
+        print("\nPhase 7: Checking for duplicate synonym usage...")
+        self.log_duplicate_synonyms()
+        
+        # Phase 8: Write outputs
+        print("\nPhase 8: Writing outputs...")
         self.write_cleaned_files()
         self.write_removed_records()
         self.write_log()

@@ -191,7 +191,7 @@ Output:
   File2: Quercus alba
 ```
 
-#### Validation Methods
+#### Quality Control Methods
 
 ##### `validate_cross_file_consistency()`
 Ensures all valid names exist in both files.
@@ -211,6 +211,46 @@ Adds missing species from File 2 to File 1.
 
 ##### `fix_missing_match_file2(missing_species: List[str])`
 Removes species from File 1 that don't exist in File 2.
+
+##### `remove_synonyms_that_are_valid_species()`
+Remove any synonyms in File 1 that are also valid species (exist as valid names).
+
+**Purpose:** Prevent valid species from being listed as synonyms of other species.
+
+**Process:**
+- Identifies all valid species names from both files
+- Scans each valid name's synonym list
+- Removes any synonyms that are also valid species
+- Logs all removals with details
+
+**Example:**
+```
+Input:
+  Tethyophaena silifica;Aaptos papillata;Tuberella papillatana
+  Aaptos papillata;Polymastia gleneni
+
+Output:
+  Tethyophaena silifica;Tuberella papillatana
+  Aaptos papillata;Polymastia gleneni
+```
+
+##### `log_duplicate_synonyms()`
+Detect and log when a synonym is used for more than one valid species.
+
+**Purpose:** Identify potential data quality issues where synonyms conflict.
+
+**Process:**
+- Maps each synonym to all valid species that use it
+- Identifies synonyms used by multiple valid species
+- Logs conflicts with full species lists
+- Prints conflicts to console during execution
+
+**No data modification:** This function only logs issues for review.
+
+**Example conflict:**
+```
+Synonym 'Common name' used by: ['Species A', 'Species B', 'Species C']
+```
 
 #### Output Methods
 
@@ -270,7 +310,11 @@ Generates comprehensive markdown summary report.
 2. **Missing Match Resolution:** Add/remove species as needed
 3. **Duplicate Handling:** Merge duplicates and combine synonyms
 
-### Phase 6: Final Output Generation
+### Phase 6: Synonym Quality Control
+1. **Valid Species Synonym Removal:** Remove synonyms that are also valid species
+2. **Duplicate Synonym Detection:** Identify synonyms used by multiple valid species
+
+### Phase 7: Final Output Generation
 1. **File Writing:** Generate cleaned CSV files
 2. **Logging:** Create detailed modification logs
 3. **Reporting:** Generate summary and taxonomy reports
@@ -311,6 +355,29 @@ cleaner.run_pipeline()
 # Access results
 print(f"Processed {len(cleaner.file1_data)} species")
 print(f"Made {len(cleaner.log_entries)} modifications")
+```
+
+#### Synonym Quality Control Processing
+```
+Input File 1 (problematic synonyms):
+  Tethyophaena silifica;Aaptos papillata;Tuberella papillatana
+  Aaptos papillata;Polymastia gleneni
+  Species A;Common synonym;Unique synonym A
+  Species B;Common synonym;Unique synonym B
+
+Processing:
+  1. Remove valid species synonyms: Remove "Aaptos papillata" from first line
+  2. Log duplicate synonyms: Flag "Common synonym" used by multiple species
+
+Output File 1 (cleaned):
+  Tethyophaena silifica;Tuberella papillatana
+  Aaptos papillata;Polymastia gleneni
+  Species A;Common synonym;Unique synonym A
+  Species B;Common synonym;Unique synonym B
+
+Log Entries:
+  - removed_valid_species_synonyms:Aaptos papillata
+  - duplicate_synonym_usage_count:2 (Common synonym)
 ```
 
 ### Data Transformation Examples
@@ -391,6 +458,10 @@ Output:
 - `removed_missing_match_file2`: Removed species from File 1
 - `removed_matched_synonym_in_file1`: Removed species matching synonyms
 
+#### Synonym Quality Control
+- `removed_valid_species_synonyms`: Removed synonyms that are valid species
+- `duplicate_synonym_usage_count`: Logged synonym used by multiple species
+
 #### Quality Control
 - `malformed_line`: Identified improperly formatted lines
 - `incomplete_taxonomy_removed`: Removed entries with insufficient taxonomy
@@ -423,29 +494,34 @@ For a dataset with 150,000 species:
 - **Taxonomy Conflicts:** ~3% (4,500)
 - **Gender Variants:** ~15% (22,500)
 - **Duplicates Merged:** ~2% (3,000)
+- **Valid Species Synonyms Removed:** ~1% (1,500)
+- **Duplicate Synonym Conflicts:** ~0.5% (750)
 - **API Queries (SMART):** 4,500
-- **Total Modifications:** ~35,000
+- **Total Modifications:** ~37,000
 
 ## Quality Assurance
 
 ### Data Integrity Checks
 1. Every valid name appears exactly once in each output file
 2. Valid names match exactly between both files
-3. All modifications logged with complete audit trail
-4. Unicode characters properly encoded
-5. No malformed separators or whitespace issues
+3. No valid species appear as synonyms of other species
+4. All modifications logged with complete audit trail
+5. Unicode characters properly encoded
+6. No malformed separators or whitespace issues
 
 ### Validation Rules
 1. **Species Format:** Must follow "Genus species" pattern
 2. **Taxonomy Consistency:** Gender variants must have matching taxonomy
 3. **Cross-file Consistency:** All valid names must exist in both files
 4. **Synonym Uniqueness:** No duplicate synonyms within entries
+5. **Valid Species Integrity:** Valid species cannot be synonyms of other species
 
 ### Output Quality
 1. **Clean Formatting:** Consistent separator usage and spacing
 2. **Proper Encoding:** All Unicode characters correctly handled
 3. **Complete Taxonomy:** Only species with adequate taxonomic information
-4. **Audit Trail:** Complete log of all modifications and decisions
+4. **Synonym Quality:** No conflicts between valid species and synonyms
+5. **Audit Trail:** Complete log of all modifications and decisions
 
 ## Troubleshooting
 
@@ -494,6 +570,13 @@ cleaner = SmartSpeciesDataCleaner(
 - `data_cleaning_pipeline`: Base pipeline functionality
 
 ## Version History
+
+### v2.1 - Synonym Quality Control Enhancement
+- Added synonym quality control functions
+- Remove synonyms that are also valid species
+- Detect and log duplicate synonym usage across species
+- Enhanced data integrity validation
+- Updated processing phases and documentation
 
 ### v2.0 - SMART Enhancement
 - Added intelligent taxonomy normalization

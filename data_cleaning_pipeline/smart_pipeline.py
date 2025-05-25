@@ -140,6 +140,24 @@ class SmartSpeciesDataCleaner(SpeciesDataCleaner):
         # Print summary to console
         self.taxonomy_normalizer.print_summary()
     
+    def remove_synonyms_that_are_valid_species(self):
+        """
+        Remove any synonyms in file1 that are also valid species (exist as valid names).
+        This prevents valid species from being listed as synonyms of other species.
+        Inherits from parent class but ensures it works with SMART pipeline.
+        """
+        # Call parent method - no changes needed for SMART functionality
+        super().remove_synonyms_that_are_valid_species()
+    
+    def log_duplicate_synonyms(self):
+        """
+        Log when a synonym is used for more than one valid species.
+        This helps identify potential data quality issues.
+        Inherits from parent class but ensures it works with SMART pipeline.
+        """
+        # Call parent method - no changes needed for SMART functionality
+        super().log_duplicate_synonyms()
+    
     def run_pipeline(self):
         """Execute the SMART enhanced cleaning pipeline."""
         print("Starting SMART Enhanced Data Cleaning Pipeline...")
@@ -178,8 +196,16 @@ class SmartSpeciesDataCleaner(SpeciesDataCleaner):
         self.fix_missing_match_file1(missing_in_file1)
         self.fix_missing_match_file2(missing_in_file2)
         
-        # Phase 6: Write outputs (enhanced)
-        print("\nPhase 6: Writing outputs...")
+        # Phase 6: Remove synonyms that are valid species (NEW!)
+        print("\nPhase 6: Removing synonyms that are valid species...")
+        self.remove_synonyms_that_are_valid_species()
+        
+        # Phase 7: Check for duplicate synonyms (NEW!)
+        print("\nPhase 7: Checking for duplicate synonym usage...")
+        self.log_duplicate_synonyms()
+        
+        # Phase 8: Write outputs (enhanced)
+        print("\nPhase 8: Writing outputs...")
         self.write_cleaned_files()
         self.write_removed_records()
         self.write_log()

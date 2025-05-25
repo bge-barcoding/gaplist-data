@@ -1,0 +1,229 @@
+# Data Cleaning Results Summary
+
+**Run Date:** 2025-05-25 20:17:38
+
+## Files Processed
+- Input file 1: `all_specs_and_syn.csv`
+- Input file 2: `Gap_list_all_updated.csv`
+- Output file 1: `all_specs_and_syn_cleaned_gbif_only.csv`
+- Output file 2: `Gap_list_all_updated_cleaned_gbif_only.csv`
+- Removed records: `Gap_list_all_removed_20250525_201447.csv`
+- Log file: `log_20250525_201447.tsv`
+
+## Results
+- **File 1:** 159006 unique species processed
+- **File 2:** 159006 unique species processed
+- **Removed records:** 4423 (incomplete taxonomy)
+- **Total modifications:** 536514
+
+## Modification Types
+- **added_from_file2_missing_match:** 1018
+- **class_order_fields_inserted:** 88
+- **duplicate_entry:** 65
+- **duplicate_merged:** 135
+- **duplicate_synonym_usage_count:10:** 1
+- **duplicate_synonym_usage_count:11:** 2
+- **duplicate_synonym_usage_count:12:** 1
+- **duplicate_synonym_usage_count:2:** 2528
+- **duplicate_synonym_usage_count:21:** 1
+- **duplicate_synonym_usage_count:3:** 166
+- **duplicate_synonym_usage_count:31:** 1
+- **duplicate_synonym_usage_count:4:** 39
+- **duplicate_synonym_usage_count:5:** 8
+- **duplicate_synonym_usage_count:6:** 1
+- **duplicate_synonym_usage_count:9:** 1
+- **gbif_validated_confidence_100:** 820
+- **gbif_validated_confidence_91:** 6
+- **gbif_validated_confidence_92:** 8
+- **gbif_validated_confidence_93:** 77
+- **gbif_validated_confidence_94:** 14
+- **gbif_validated_confidence_95:** 286
+- **gbif_validated_confidence_96:** 3573
+- **gender_variant_merged:** 632
+- **gender_variants_merged_file2_authority:** 316
+- **incomplete_taxonomy_removed:** 4275
+- **malformed_line:** 4276
+- **master_added_from_file2:** 10
+- **master_synonyms_updated:** 154
+- **matched_synonym_in_file1:** 5
+- **missing_match_file1:** 1166
+- **missing_match_file2:** 2
+- **order_field_inserted:** 2650
+- **removed_improper_capitalization:** 5
+- **removed_invalid_species_format:** 137
+- **removed_matched_synonym_in_file1:** 5
+- **removed_missing_match_file2:** 2
+- **removed_not_species_format:** 1
+- **removed_valid_species_synonyms:Achipteria acuta:** 1
+- **removed_valid_species_synonyms:Aedes phoeniciae:** 1
+- **removed_valid_species_synonyms:Agathidium bescidicum:** 1
+- **removed_valid_species_synonyms:Agathidium globulum:** 2
+- **removed_valid_species_synonyms:Agrilus angustulus:** 1
+- **removed_valid_species_synonyms:Agrilus cuprescens:** 2
+- **removed_valid_species_synonyms:Alburnus alburnus:** 6
+- **removed_valid_species_synonyms:Alysson spinosus:** 1
+- **removed_valid_species_synonyms:Amerus lundbladi:** 1
+- **removed_valid_species_synonyms:Ammoplanus perrisi:** 1
+- **removed_valid_species_synonyms:Andrena bicolor:** 1
+- **removed_valid_species_synonyms:Andrena bimaculata:** 2
+- **removed_valid_species_synonyms:Andrena proxima:** 1
+- **removed_valid_species_synonyms:Anoplius infuscatus:** 1
+- **removed_valid_species_synonyms:Anthophora canescens:** 1
+- **removed_valid_species_synonyms:Aphyosemion ogoense:** 1
+- **removed_valid_species_synonyms:Arachnospila trivialis:** 1
+- **removed_valid_species_synonyms:Arrenurus ornatus:** 1
+- **removed_valid_species_synonyms:Bagrada confusa:** 1
+- **removed_valid_species_synonyms:Bombylius analis:** 1
+- **removed_valid_species_synonyms:Byrrhus fasciatus:** 2
+- **removed_valid_species_synonyms:Cantharis pallida:** 1
+- **removed_valid_species_synonyms:Carabodes ornatus:** 1
+- **removed_valid_species_synonyms:Cerceris lunata:** 2
+- **removed_valid_species_synonyms:Cerceris rybyensis:** 2
+- **removed_valid_species_synonyms:Ceropales cribrata:** 1
+- **removed_valid_species_synonyms:Chamaesyrphus lusitanicus:** 1
+- **removed_valid_species_synonyms:Cheilosia alpina:** 1
+- **removed_valid_species_synonyms:Conops flavifrons:** 1
+- **removed_valid_species_synonyms:Coregonus widegreni:** 1
+- **removed_valid_species_synonyms:Crossocerus megacephalus:** 1
+- **removed_valid_species_synonyms:Cryptocheilus elegans:** 1
+- **removed_valid_species_synonyms:Cryptocheilus versicolor:** 1
+- **removed_valid_species_synonyms:Culicoides puncticollis:** 1
+- **removed_valid_species_synonyms:Dahlica appenninica:** 1
+- **removed_valid_species_synonyms:Dahlica juliella:** 1
+- **removed_valid_species_synonyms:Dahlica listerella:** 2
+- **removed_valid_species_synonyms:Damaeus tecticola:** 1
+- **removed_valid_species_synonyms:Daptonema levis:** 1
+- **removed_valid_species_synonyms:Dicyphus baezi:** 1
+- **removed_valid_species_synonyms:Dolichopus albifrons:** 2
+- **removed_valid_species_synonyms:Dolichopus nigripes:** 1
+- **removed_valid_species_synonyms:Dolichopus plumipes:** 1
+- **removed_valid_species_synonyms:Dolichopus propinquus:** 1
+- **removed_valid_species_synonyms:Empis andalusiaca:** 1
+- **removed_valid_species_synonyms:Empis grisea:** 1
+- **removed_valid_species_synonyms:Empis minor:** 1
+- **removed_valid_species_synonyms:Empis prodromus:** 1
+- **removed_valid_species_synonyms:Empis volucris:** 1
+- **removed_valid_species_synonyms:Eoferreola manticata:** 2
+- **removed_valid_species_synonyms:Epiplatys grahami:** 1
+- **removed_valid_species_synonyms:Eremocossus foeda:** 1
+- **removed_valid_species_synonyms:Erioptera fuscipennis:** 1
+- **removed_valid_species_synonyms:Eudontomyzon vladykovi:** 1
+- **removed_valid_species_synonyms:Eumerus argyropus:** 1
+- **removed_valid_species_synonyms:Euprepis auratus:** 1
+- **removed_valid_species_synonyms:Evagetes crassicornis:** 1
+- **removed_valid_species_synonyms:Gasterosteus aculeatus:** 1
+- **removed_valid_species_synonyms:Halictus consobrinus:** 1
+- **removed_valid_species_synonyms:Herpisticus eremita:** 1
+- **removed_valid_species_synonyms:Idris flavicornis:** 1
+- **removed_valid_species_synonyms:Ischyrosyrphus glaucia:** 1
+- **removed_valid_species_synonyms:Lebertia acuta:** 1
+- **removed_valid_species_synonyms:Leucos aula:** 1
+- **removed_valid_species_synonyms:Limnephilus binotatus:** 1
+- **removed_valid_species_synonyms:Luffia lapidella:** 2
+- **removed_valid_species_synonyms:Maritrema pyrenaica:** 1
+- **removed_valid_species_synonyms:Medetera ambigua:** 1
+- **removed_valid_species_synonyms:Megachile canescens:** 1
+- **removed_valid_species_synonyms:Megachile montenegrensis:** 1
+- **removed_valid_species_synonyms:Melitaea nevadensis:** 1
+- **removed_valid_species_synonyms:Merluccius capensis:** 1
+- **removed_valid_species_synonyms:Merodon aeneus:** 1
+- **removed_valid_species_synonyms:Merodon constans:** 1
+- **removed_valid_species_synonyms:Mesochorus politus:** 1
+- **removed_valid_species_synonyms:Miscophus nicolai:** 1
+- **removed_valid_species_synonyms:Misgurnus mohoity:** 1
+- **removed_valid_species_synonyms:Nycteribia latreillii:** 1
+- **removed_valid_species_synonyms:Nysson dimidiatus;Nysson tridens:** 1
+- **removed_valid_species_synonyms:Nysson quadriguttatus:** 1
+- **removed_valid_species_synonyms:Omphalophora oculata:** 1
+- **removed_valid_species_synonyms:Oribatula arcuatissima:** 1
+- **removed_valid_species_synonyms:Oribatula exarata:** 1
+- **removed_valid_species_synonyms:Orthocladius nigritus:** 1
+- **removed_valid_species_synonyms:Orthotylus griseinervis:** 1
+- **removed_valid_species_synonyms:Otiorhynchus stierlini:** 1
+- **removed_valid_species_synonyms:Oxybelus haemorrhoidalis:** 1
+- **removed_valid_species_synonyms:Pararctia lapponica:** 1
+- **removed_valid_species_synonyms:Pareudesmoscolex laciniosus:** 1
+- **removed_valid_species_synonyms:Pareudesmoscolex pratensis:** 1
+- **removed_valid_species_synonyms:Passaloecus gracilis:** 1
+- **removed_valid_species_synonyms:Passaloecus singularis:** 1
+- **removed_valid_species_synonyms:Pemphredon lethifer:** 1
+- **removed_valid_species_synonyms:Phoxinus phoxinus:** 3
+- **removed_valid_species_synonyms:Phronia insularis:** 1
+- **removed_valid_species_synonyms:Phyllodoce macroceros:** 1
+- **removed_valid_species_synonyms:Phytomyza lonicerae:** 3
+- **removed_valid_species_synonyms:Polinices montagui:** 1
+- **removed_valid_species_synonyms:Potamilla rubra:** 1
+- **removed_valid_species_synonyms:Priocnemis pusilla:** 1
+- **removed_valid_species_synonyms:Psallus henschii:** 1
+- **removed_valid_species_synonyms:Psenulus pallipes:** 2
+- **removed_valid_species_synonyms:Psodos alpmaritima:** 1
+- **removed_valid_species_synonyms:Psodos alticolaria:** 1
+- **removed_valid_species_synonyms:Psodos belzebuth:** 1
+- **removed_valid_species_synonyms:Psodos chalybaeus:** 1
+- **removed_valid_species_synonyms:Punctoribates insignis:** 1
+- **removed_valid_species_synonyms:Quedius suturalis:** 1
+- **removed_valid_species_synonyms:Rhamphomyia caudata:** 1
+- **removed_valid_species_synonyms:Rhamphomyia dorsata:** 1
+- **removed_valid_species_synonyms:Rhamphomyia morio:** 1
+- **removed_valid_species_synonyms:Salmo trutta:** 6
+- **removed_valid_species_synonyms:Sciara modesta:** 1
+- **removed_valid_species_synonyms:Sciocoris cursitans:** 1
+- **removed_valid_species_synonyms:Sciophila hirta:** 1
+- **removed_valid_species_synonyms:Scolia sexmaculata:** 1
+- **removed_valid_species_synonyms:Sepsis vicaria:** 1
+- **removed_valid_species_synonyms:Spelaeocaris pretneri:** 1
+- **removed_valid_species_synonyms:Sphaerophoria rueppellii:** 1
+- **removed_valid_species_synonyms:Squalius cephalus:** 1
+- **removed_valid_species_synonyms:Stephanitis oberti:** 1
+- **removed_valid_species_synonyms:Stichobasis hofmanni:** 1
+- **removed_valid_species_synonyms:Tachina magnicornis:** 1
+- **removed_valid_species_synonyms:Tachyagetes aemulans:** 2
+- **removed_valid_species_synonyms:Tachysphex consocius:** 1
+- **removed_valid_species_synonyms:Tachysphex fulvitarsis:** 1
+- **removed_valid_species_synonyms:Tachysphex mocsaryi:** 1
+- **removed_valid_species_synonyms:Tachysphex panzeri:** 2
+- **removed_valid_species_synonyms:Tingis maculata:** 1
+- **removed_valid_species_synonyms:Tingis pusilla:** 1
+- **removed_valid_species_synonyms:Tipula bosnica:** 1
+- **removed_valid_species_synonyms:Torymus auratus:** 1
+- **removed_valid_species_synonyms:Torymus flavipes:** 1
+- **removed_valid_species_synonyms:Trichomalus lucidus:** 1
+- **removed_valid_species_synonyms:Trichonta canariensis:** 1
+- **removed_valid_species_synonyms:Trypoxylon clavicerum:** 1
+- **removed_valid_species_synonyms:Wiedemannia alpina:** 2
+- **removed_valid_species_synonyms:Xanthochilus quadratus:** 1
+- **removed_valid_species_synonyms:Zebrasoma velifer:** 1
+- **removed_valid_species_synonyms:Zebrasoma veliferum:** 1
+- **subgenus_processed:** 21244
+- **synonym_removed:** 7643
+- **taxonomy_mismatch:** 1
+- **trailing_data_stripped:** 158388
+- **unicode_fixed:** 72
+- **variant_missing_in_file1:** 8
+- **whitespace_removed:** 326515
+
+## Details
+For detailed logs, see: `log_20250525_201447.tsv`
+
+## SMART Taxonomy Normalization
+- **Mode:** gbif_only
+- **Confidence Threshold:** 0.8
+- **SMART GBIF:** Only queries conflicted species
+
+### Normalization Statistics
+- **Gbif Queries Made:** 8,955
+- **Gbif Queries Saved:** 150,515
+- **Gbif Successful Matches:** 8,955
+- **Gbif Changes Applied:** 4,784
+
+### SMART GBIF Efficiency
+- **Total Species:** 159,470
+- **Queries Made:** 8,955
+- **Queries Saved:** 150,515 (94.4%)
+
+### GBIF API Statistics
+- **Api Calls:** 0
+- **Cache Hits:** 8955
+- **Successful Matches:** 0
+- **Failed Matches:** 0
+- **Rate Limited:** 0
