@@ -38,6 +38,27 @@ class SpeciesDataCleaner:
         self.file1_data = {}  # valid_name -> [synonyms]
         self.file2_data = {}  # valid_name -> [phylum, class, order, family]
         
+        # Gender ending patterns for merging
+        self.gender_patterns = [
+            # Common Latin gender endings - each entry is (pattern, all_endings_in_group)
+            (r'(.+)us$', ['us', 'a', 'um']),      # -us, -a, -um
+            (r'(.+)a$', ['us', 'a', 'um']),       # -us, -a, -um (from -a)
+            (r'(.+)um$', ['us', 'a', 'um']),      # -us, -a, -um (from -um)
+            (r'(.+)is$', ['is', 'e']),            # -is, -e
+            (r'(.+)e$', ['is', 'e']),             # -is, -e (from -e)
+            (r'(.+)ensis$', ['ensis', 'ense']),   # -ensis, -ense
+            (r'(.+)ense$', ['ensis', 'ense']),    # -ensis, -ense (from -ense)
+            (r'(.+)icus$', ['icus', 'ica', 'icum']), # -icus, -ica, -icum
+            (r'(.+)ica$', ['icus', 'ica', 'icum']),  # -icus, -ica, -icum (from -ica)
+            (r'(.+)icum$', ['icus', 'ica', 'icum']), # -icus, -ica, -icum (from -icum)
+            (r'(.+)atus$', ['atus', 'ata', 'atum']), # -atus, -ata, -atum
+            (r'(.+)ata$', ['atus', 'ata', 'atum']),  # -atus, -ata, -atum (from -ata)
+            (r'(.+)atum$', ['atus', 'ata', 'atum']), # -atus, -ata, -atum (from -atum)
+            (r'(.+)osus$', ['osus', 'osa', 'osum']), # -osus, -osa, -osum
+            (r'(.+)osa$', ['osus', 'osa', 'osum']),  # -osus, -osa, -osum (from -osa)
+            (r'(.+)osum$', ['osus', 'osa', 'osum']), # -osus, -osa, -osum (from -osum)
+        ]
+        
     def log_change(self, file_name: str, line_num: int, original: str, updated: str, note: str):
         """Add entry to modification log"""
         self.log_entries.append({
@@ -120,7 +141,172 @@ class SpeciesDataCleaner:
             
             return standard_name, additional_synonyms
         
-        return name.strip(), []    
+        return name.strip(), []
+    
+    def get_species_stem_and_variants(self, species_name: str) -> Tuple[str, List[str]]:
+        """
+        Extract stem and generate gender variants for a species name.
+        Returns: (stem, [list of possible gender variants])
+        """
+        if not species_name or ' ' not in species_name.strip():
+            return species_name, []
+        
+        genus, species = species_name.strip().split(' ', 1)
+        variants = []
+        
+        for pattern, endings in self.gender_patterns:
+            match = re.match(pattern, species, re.IGNORECASE)
+            if match:
+                stem = match.group(1)
+                # Generate all variants in this ending group
+                for ending in endings:
+                    variant = stem + ending
+                    full_variant = f"{genus} {variant}"
+                    if full_variant.lower() != species_name.lower():
+                        variants.append(full_variant)
+                return f"{genus} {stem}", variants
+        
+        return species_name, []
+    
+    def find_gender_variant_groups(self) -> Dict[str, List[str]]:
+        """
+        Find groups of species names that are gender variants of each other.
+        Returns: dict mapping stem -> [list of actual species names]
+        """
+        stem_groups = defaultdict(list)
+        all_names = set()
+        
+        # Collect all valid names from both files
+        for name_lower in self.file1_data:
+            actual_name = self.file1_data[name_lower][0]
+            all_names.add(actual_name)
+        
+        for name_lower in self.file2_data:
+            actual_name = self.file2_data[name_lower][0]
+            all_names.add(actual_name)
+        
+        # Group by stems
+        for name in all_names:
+            stem, variants = self.get_species_stem_and_variants(name)
+            if variants:  # Only group names that have potential variants
+                stem_groups[stem.lower()].append(name)
+        
+        # Filter to only groups with multiple members
+        result = {}
+        for stem, names in stem_groups.items():
+            if len(names) > 1:
+                result[stem] = names
+        
+        return result
+    
+    def merge_gender_variants(self):
+        """
+        Merge species names that differ only by gender endings.
+        Maintains consistency between both files.
+        """
+        print("Merging gender variants...")
+        
+        variant_groups = self.find_gender_variant_groups()
+        if not variant_groups:
+            print("No gender variants found to merge.")
+            return
+        
+        print(f"Found {len(variant_groups)} groups of gender variants to merge.")
+        
+        for stem, variant_names in variant_groups.items():
+            # Sort names to ensure consistent selection of master
+            variant_names.sort()
+            master_name = variant_names[0]
+            merge_names = variant_names[1:]
+            
+            print(f"Merging variants of '{stem}': {variant_names} -> master: '{master_name}'")
+            
+            # Check if all variants exist in both files and have matching taxonomy
+            master_lower = master_name.lower()
+            can_merge = True
+            
+            # Validate master exists in both files
+            if master_lower not in self.file1_data or master_lower not in self.file2_data:
+                self.log_change('gender_merge', 0, ';'.join(variant_names), 
+                              master_name, 'master_missing_in_files')
+                continue
+            
+            master_taxonomy = self.file2_data[master_lower][1]
+            
+            # Validate all merge candidates exist and have matching taxonomy
+            valid_merge_names = []
+            for merge_name in merge_names:
+                merge_lower = merge_name.lower()
+                
+                if merge_lower not in self.file1_data or merge_lower not in self.file2_data:
+                    self.log_change('gender_merge', 0, merge_name, '', 
+                                  'variant_missing_in_files')
+                    continue
+                
+                merge_taxonomy = self.file2_data[merge_lower][1]
+                
+                # Check if taxonomy matches (first 4 fields: phylum, class, order, family)
+                if master_taxonomy[:4] != merge_taxonomy[:4]:
+                    self.log_change('gender_merge', 0, 
+                                  f"{master_name}:{';'.join(master_taxonomy)} vs {merge_name}:{';'.join(merge_taxonomy)}", 
+                                  '', 'taxonomy_mismatch')
+                    continue
+                
+                valid_merge_names.append(merge_name)
+            
+            if not valid_merge_names:
+                continue
+            
+            # Perform the merge
+            # File 1: Merge synonyms and add variant names as synonyms
+            master_synonyms = list(self.file1_data[master_lower][1])  # Copy existing synonyms
+            
+            for merge_name in valid_merge_names:
+                merge_lower = merge_name.lower()
+                merge_synonyms = self.file1_data[merge_lower][1]
+                
+                # Add all synonyms from merge candidate
+                master_synonyms.extend(merge_synonyms)
+                
+                # Add the merge candidate name itself as a synonym
+                master_synonyms.append(merge_name)
+                
+                # Remove merge candidate from file1_data
+                del self.file1_data[merge_lower]
+                
+                self.log_change('file1', 0, 
+                              f"{merge_name};{';'.join(merge_synonyms)}", 
+                              f"merged_into:{master_name}", 
+                              'gender_variant_merged')
+            
+            # Remove duplicate synonyms
+            unique_synonyms = []
+            seen = set()
+            for syn in master_synonyms:
+                if syn.lower() not in seen and syn.lower() != master_lower:
+                    unique_synonyms.append(syn)
+                    seen.add(syn.lower())
+            
+            # Update master entry in file1
+            self.file1_data[master_lower] = (master_name, unique_synonyms)
+            
+            # File 2: Remove merge candidates (master already has the taxonomy)
+            for merge_name in valid_merge_names:
+                merge_lower = merge_name.lower()
+                merge_taxonomy = self.file2_data[merge_lower][1]  # Get before deleting
+                
+                del self.file2_data[merge_lower]
+                
+                self.log_change('file2', 0, 
+                              f"{merge_name};{';'.join(merge_taxonomy)}", 
+                              f"merged_into:{master_name}", 
+                              'gender_variant_merged')
+            
+            self.log_change('gender_merge', 0, 
+                          ';'.join(variant_names), 
+                          f"master:{master_name};merged:{len(valid_merge_names)}", 
+                          'gender_variants_merged')
+    
     def detect_encoding(self, file_path):
         """Detect file encoding"""
         encodings = ['utf-8', 'latin-1', 'cp1252', 'iso-8859-1']
@@ -366,10 +552,13 @@ class SpeciesDataCleaner:
         self.read_file1()
         self.read_file2()
         
-        # Phase 2: Validate consistency
+        # Phase 2: Merge gender variants
+        self.merge_gender_variants()
+        
+        # Phase 3: Validate consistency
         self.validate_cross_file_consistency()
         
-        # Phase 3: Write outputs
+        # Phase 4: Write outputs
         self.write_cleaned_files()
         self.write_log()
         

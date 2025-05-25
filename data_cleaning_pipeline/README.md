@@ -48,7 +48,25 @@ This pipeline cleans two corresponding CSV files containing species data to ensu
      - Keep original synonym
      - Add `Subgenus species` as additional synonym (unless identical to valid name)
 
-### Phase 3: Duplicate Handling
+### Phase 3: Gender Ending Merge
+1. **Gender Variant Detection**
+   - Identify species names that differ only by gender endings
+   - Common patterns: -us/-a/-um, -is/-e, -ensis/-ense, -icus/-ica/-icum, -atus/-ata/-atum, -osus/-osa/-osum
+   - Group variants by genus and species stem (e.g., "Quercus alb-" groups "alba", "albus", "album")
+
+2. **Taxonomy Validation**
+   - Only merge variants that exist in both files
+   - Require identical taxonomy (Phylum, Class, Order, Family) in File 2
+   - Skip merging if taxonomy differs between variants
+
+3. **Merge Process**
+   - Select first variant alphabetically as master valid name
+   - Add all other variants as synonyms to master entry
+   - Merge all synonyms from variant entries
+   - Remove duplicate entries from both files
+   - Maintain consistency between File 1 and File 2
+
+### Phase 4: Duplicate Handling
 1. **File 1 (Species and Synonyms)**
    - Identify duplicate valid names (case-insensitive comparison)
    - Merge all synonyms from duplicates into single record
@@ -59,7 +77,7 @@ This pipeline cleans two corresponding CSV files containing species data to ensu
    - Log conflicts as "duplicate_entry" for manual resolution
    - Keep first occurrence, log others
 
-### Phase 4: Data Consistency
+### Phase 5: Data Consistency
 1. **Cross-file Validation**
    - Ensure every valid name in File 1 has exact match in File 2
    - Report missing matches as errors
@@ -69,7 +87,7 @@ This pipeline cleans two corresponding CSV files containing species data to ensu
    - Remove synonyms that exactly match the valid name
    - Remove duplicate synonyms
 
-### Phase 5: Final Formatting
+### Phase 6: Final Formatting
 1. **File 1**: Maintain format `valid_name;synonym1;synonym2;...`
 2. **File 2**: 
    - Trim to `valid_name;Phylum;Class;Order;Family` (remove all other columns)
@@ -100,6 +118,39 @@ Banana apple;Banana (Pear) apple;Blueberry (Pear) apple
 ```
 Banana apple;Banana (Pear) apple;Pear apple;Blueberry (Pear) apple;Blueberry apple
 ```
+
+### Gender Ending Merge Examples
+
+**Input File 1:**
+```
+Quercus alba;synonym1;synonym2
+Quercus albus;synonym3;synonym4
+```
+
+**Input File 2:**
+```
+Quercus alba;Plantae;Magnoliopsida;Fagales;Fagaceae
+Quercus albus;Plantae;Magnoliopsida;Fagales;Fagaceae
+```
+
+**Output File 1:**
+```
+Quercus alba;synonym1;synonym2;synonym3;synonym4;Quercus albus
+```
+
+**Output File 2:**
+```
+Quercus alba;Plantae;Magnoliopsida;Fagales;Fagaceae
+```
+
+**Example with taxonomy mismatch (no merge):**
+
+**Input File 2:**
+```
+Genus alba;Phylum1;Class1;Order1;Family1
+Genus albus;Phylum2;Class1;Order1;Family1
+```
+*(No merge occurs due to different Phylum)*
 
 ### Duplicate Merging Example
 
@@ -147,6 +198,11 @@ Aagaardia protensa;Arthropoda;Insecta;Diptera;Chironomidae
 - `separator_cleaned`: Double separators or trailing semicolons removed
 - `unicode_fixed`: Unicode escape sequences converted
 - `subgenus_processed`: Subgenus format standardized
+- `gender_variant_merged`: Species name merged due to gender ending difference
+- `gender_variants_merged`: Summary of gender variant group merge
+- `master_missing_in_files`: Gender variant master not found in both files
+- `variant_missing_in_files`: Gender variant not found in both files
+- `taxonomy_mismatch`: Gender variants have different taxonomy, merge skipped
 - `duplicate_merged`: Duplicate entries combined
 - `duplicate_entry`: Conflict in File 2 requiring manual resolution
 - `synonym_removed`: Synonym identical to valid name removed
